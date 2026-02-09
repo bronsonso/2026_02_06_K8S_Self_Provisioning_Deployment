@@ -33,7 +33,7 @@
 3. future resoureces provisioning
 4. RBAC
 
-5. Seperate Cluster Based On the following considerations\
+5. Seperate Cluster Based On the following considerations
 
    **1. Regulatory/Compliance Requirements**
   regulatory_separation:
@@ -41,7 +41,7 @@
     - examination_data: "Exam authority requirements"
     - financial_data: "Audit and compliance"
     
-  **2. Security Boundaries
+  **2. Security Boundaries**
   security_domains:
     - internet_facing: "High risk, exposed apps"
     - internal_only: "School network only"
