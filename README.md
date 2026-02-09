@@ -1,22 +1,34 @@
 ## This project is to build a solution for K8S Self Provisioning Deployment
-## This project contains 9 phases
 
-1. user want to request K8S resources for a project
-   user send request to support@hkecl.net to create a project account and grant relevant privilege
-   a. project name
-   b. description
-   c. justification
-   b. duration
-   c. resoureces needed
-   d. other services needed, e.g. domain
 
-2. user login to the system and pick up resources requirement on the interface 
-3. signal a PR on git
-3. the application needs to be approved by the team/project leader
-4. signal a MR on git
-4. Github Action
-   FluxCD
-4. Terraform
-5. Ansible
-5. required resources created on K8S
-   email sent to user to confirm resources creation and access method
+## Complete Pipeline Overview
+
+| Stage | Name | Purpose | Primary Tools | Input | Output |
+|-------|------|---------|---------------|-------|--------|
+| **1** | **REQUEST** | Resource initiation and validation | GitHub Issues/PRs, Backstage, Jira | Developer needs | Validated request ticket |
+| **2** | **APPROVAL** | Governance and compliance check | GitHub Reviews, OPA, manual approval | Request ticket | Approved/Rejected decision |
+| **3** | **PROVISION** | Infrastructure creation | Terraform, Crossplane, Pulumi | Approved request | Namespace with quotas & policies |
+| **4** | **CONFIG_SYNC** | GitOps configuration deployment | Flux CD, Argo CD | Git repository | Applications deployed |
+| **5** | **CI** | Build and test automation | GitHub Actions, Jenkins, GitLab CI | Source code | Container images |
+| **6** | **CD** | Release and deployment | Flux CD Auto, Argo Rollouts, Spinnaker | New container images | Updated running applications |
+| **7** | **OBSERVE** | Monitoring and observability | Prometheus, Grafana, ELK | Running applications | Metrics, logs, alerts |
+| **8** | **MAINTAIN** | Optimization and cleanup | Custom operators, CronJobs | Time/usage data | Optimized resources |
+
+## Workflow Overview
+
+| Step | Stage Name | Description | Tools/Systems | Owner |
+|------|------------|-------------|---------------|-------|
+| **1** | **REQUEST_INITIATION** | User submits project request via email | Email, Request Form | User |
+| **2** | **ACCOUNT_PROVISIONING** | Support creates project account and base access | Active Directory, IAM | Support Team |
+| **3** | **RESOURCE_SELECTION** | User selects resources via self-service portal | Backstage Portal | User |
+| **4** | **GIT_PR_CREATION** | Portal generates Pull Request with resource specs | GitHub, Backstage | System |
+| **5** | **APPROVAL_WORKFLOW** | Team/project leader reviews and approves | GitHub Reviews, Slack | Project Lead |
+| **6** | **INFRA_AUTOMATION** | Automated provisioning pipeline executes | GitHub Actions, Terraform, Ansible | CI/CD System |
+| **7** | **RESOURCE_DEPLOYMENT** | GitOps syncs configuration to Kubernetes | FluxCD, Kubernetes | GitOps System |
+| **8** | **NOTIFICATION** | User notified of resource availability | Email, Slack | Notification System |
+
+## Considerations
+1. maintenance cost
+2. cost management
+3. future resoureces provisioning
+4. RBAC
