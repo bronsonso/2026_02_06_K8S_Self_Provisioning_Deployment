@@ -5,24 +5,22 @@
 # Save this file and send to: support@hkecl.net
 # ==============================================
 
-apiVersion: hkecl.net/v1alpha1
+apiVersion: hkecl.net/v1.0               # Request form version
 kind: ResourceRequest
 metadata:
   requestId: "auto-generated-on-submit"  # Will be filled by system
-  createdAt: "2024-11-15T10:30:00Z"      # Auto-filled
-  department: "Marketing"                # Your department
-
-# ====================G
+  createdAt: "2auto-generated-on-submit" # Will be filled by system
+  
+# ====================
 # SECTION 1: REQUESTER
 # ====================
 requester:
   name: "John Smith"
   email: "john.smith@hkecl.net"
-  employeeId: "HKECL-2024-001"
-  phoneExtension: "x1234"
+  department: "Marketing"                # Your department
   manager:
-    name: "Jane Doe"
-    email: "jane.doe@hkecl.net"
+    name: "Jane Doe"                     # optional
+    email: "jane.doe@hkecl.net"          # optional
 
 # =====================
 # SECTION 2: PROJECT
@@ -38,11 +36,9 @@ project:
     Required for Q4 marketing campaign to increase
     brand visibility and customer engagement.
     
-  type: "wordpress"                     # wordpress | custom | api | database
-  priority: "medium"                    # low | medium | high | critical
-  launchDate: "2024-12-01"              # YYYY-MM-DD
-  duration: "permanent"                 # temporary | permanent
-  endDate: ""                           # YYYY-MM-DD (if temporary)
+  type: "wordpress"                     # wordpress | custom | api | database | application name | website
+  startDate: "2024-12-01"               # YYYY-MM-DD
+  endDate: "2026-12-31"                           # YYYY-MM-DD
   
   # For WordPress specific
   wordpress:
