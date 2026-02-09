@@ -18,4 +18,5 @@
    FluxCD
 4. Terraform
 5. Ansible
-5. 
+5. required resources created on K8S
+   email sent to user to confirm resources creation and access method
