@@ -14,4 +14,8 @@
 3. signal a PR on git
 3. the application needs to be approved by the team/project leader
 4. signal a MR on git
-4. 
+4. Github Action
+   FluxCD
+4. Terraform
+5. Ansible
+5. 
