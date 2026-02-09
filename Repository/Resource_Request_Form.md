@@ -1,3 +1,6 @@
+```
+yaml
+
 # ==============================================
 # Kubernetes Resource Request Form
 # For WordPress/Web Application Deployment
@@ -417,3 +420,4 @@ validation:
 # 4. Save as: [project-name]-request.yaml
 # 5. Email to: support@hkecl.net
 # ==============================================
+```
