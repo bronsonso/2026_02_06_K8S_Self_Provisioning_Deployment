@@ -33,7 +33,8 @@
 3. future resoureces provisioning
 4. RBAC
 
-5. Seperate Cluster Based On the following considerations
+5. Seperate Cluster Based On the following considerations\
+
    **1. Regulatory/Compliance Requirements**
   regulatory_separation:
     - student_personal_data: "GDPR/HK Privacy Ordinance"
