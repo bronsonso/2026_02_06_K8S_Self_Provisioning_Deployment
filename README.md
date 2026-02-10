@@ -72,22 +72,9 @@ Project Owner: Bronson So<br>
 
 <br>
 
-## Suggested github directory structure for multi cluster implementation
-### Your Git repo becomes:
-
-```
-clusters/
-├── cluster-us-east-1-dev/
-│   ├── kustomization.yaml
-│   ├── config/
-│   └── apps/
-├── cluster-us-east-1-staging/
-├── cluster-us-east-1-prod/
-├── cluster-eu-west-1-dev/
-├── cluster-eu-west-1-staging/
-├── cluster-eu-west-1-prod/
-└── ... 50 more directories
-```
+## Suggested github directory structure 
+ - Github Structure [Link](./Repository/Documentations/github_structure.md)
+<br>
 
 ## Suggested namespace
 
