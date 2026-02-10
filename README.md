@@ -80,7 +80,7 @@
 3. future resoureces provisioning
 4. RBAC
 
-K8S infrastructure framework decision [Path](./Repository/Documentations/k8s_infrasturcture_framework_comparison.md)
+K8S infrastructure framework decision [Path](./Repository/Documentations/k8s_infrastructure_framework_comparison.md)
 1) k8s on bare metal
 2) k8s on VM/HCI
 
