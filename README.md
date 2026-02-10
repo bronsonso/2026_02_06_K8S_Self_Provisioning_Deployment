@@ -34,7 +34,12 @@ Project Owner: Bronson So<br>
 <br><br>
 
 ## K8S Infrastructure Decision Matrix
-
+<button onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none'">
+  Toggle Content
+</button>
+<div style="display:none; padding:10px; border:1px solid #ddd; margin-top:5px;">
+  Hidden content shown by inline JS.
+</div>
 | Stage | Purpose | Popular Choices | Lightweight/Option | Enterprise/Option | Cloud Native/Option |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1. Host OS | Base operating system | Ubuntu LTS, RHEL, Rocky Linux | Fedora CoreOS | RHEL, SUSE Linux ES | Bottlerocket, VMware Photon |
