@@ -92,6 +92,9 @@ clusters/
 ## Suggested namespace
 
 
+## Network Diagram
+
+![Github Logo](./Network/k8s_infra_v2.svg)
 
 
 ## Cluster Map
