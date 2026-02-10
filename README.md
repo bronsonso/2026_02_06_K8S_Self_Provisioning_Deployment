@@ -4,7 +4,6 @@ Version: 1.0<br>
 Date: 2026-01-21<br>
 Project Owner: Bronson So<br>
 
-<br><br>
 
 ## Background and Objectives
 ```
