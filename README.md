@@ -1,22 +1,39 @@
-## This project is to build a solution for K8S Self Provisioning Deployment
+## General Information
+Project Name: K8S Self Provisioning Deployment
+Version: 1.0
+Date: 2026-01-21
+Project Owner: Bronson So
 
+<br><br>
 
-## HCI Complete Pipeline Overview
+## Background and Objectives
+```
+✅ CURRENT:
+- 700 VMs on KVM/OpenVZ
+- Mix of containerizable and legacy VMs
+- Moving toward HCI
+- Need developer self-service
 
-| Stage | Name | Purpose | Primary Tools | Input | Output |
-|-------|------|---------|---------------|-------|--------|
-| **1** | HCI Platform | Resource initiation and validation | Harvester,  | Developer needs | Validated request ticket |
-| **2** | **APPROVAL** | Governance and compliance check | GitHub Reviews, OPA, manual approval | Request ticket | Approved/Rejected decision |
-| **3** | **PROVISION** | Infrastructure creation | Terraform, Crossplane, Pulumi | Approved request | Namespace with quotas & policies |
-| **4** | **CONFIG_SYNC** | GitOps configuration deployment | Flux CD, Argo CD | Git repository | Applications deployed |
-| **5** | **CI** | Build and test automation | GitHub Actions, Jenkins, GitLab CI | Source code | Container images |
-| **6** | **CD** | Release and deployment | Flux CD Auto, Argo Rollouts, Spinnaker | New container images | Updated running applications |
-| **7** | **OBSERVE** | Monitoring and observability | Prometheus, Grafana, ELK | Running applications | Metrics, logs, alerts |
-| **8** | **MAINTAIN** | Optimization and cleanup | Custom operators, CronJobs | Time/usage data | Optimized resources |
+✅ GOALS:
+- Modernize infrastructure
+- Kubernetes for new apps
+- VM support for legacy
+- Self-service platform
+- HCI integration
+```
+<br><br>
 
-<br><br><br>
+## Considerations
+### Bare metal vs VM
+- K8S infrastructure framework decision [Link](./Repository/Documentations/k8s_infrastructure_framework_decision_matrix.md)
+### HCI integration
+- [Link](./Repository/Documentations/hci_infrastructure_framework_decision_matrix.md)
+### Single vs multi cluster implementation
+- [Link](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
 
-## K8S Complete Infrastructure Decision Matrix
+<br><br>
+
+## K8S Infrastructure Decision Matrix
 | Stage | Purpose | Popular Choices | Lightweight/Option | Enterprise/Option | Cloud Native/Option |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1. Host OS | Base operating system | Ubuntu LTS, RHEL, Rocky Linux | Fedora CoreOS | RHEL, SUSE Linux ES | Bottlerocket, VMware Photon |
@@ -37,10 +54,9 @@
 | 16. Security | Policy & scanning | Kyverno, OPA/Gatekeeper, Trivy | Falco, Trivy | Aqua, Prisma Cloud, Snyk | AWS Security Hub, GCP Security |
 | 17. Secret Management | Secret storage | HashiCorp Vault, External Secrets | Sealed Secrets | HashiCorp Vault Enterprise | AWS Secrets Manager, GCP Secret Manager |
 
-
 <br><br><br>
 
-## K8S Complete Pipeline Overview
+## K8S Pipeline Decision Matrix
 
 | Stage | Name | Purpose | Primary Tools | Input | Output |
 |-------|------|---------|---------------|-------|--------|
@@ -70,7 +86,6 @@
 
 <br><br><br>
 
-
 ## Considerations
 1. maintenance cost
 2. cost management
@@ -80,91 +95,6 @@
 3. future resoureces provisioning
 4. RBAC
 
-K8S infrastructure framework decision [Path](./Repository/Documentations/k8s_infrastructure_framework_comparison.md)
-1) k8s on bare metal
-2) k8s on VM/HCI
-
-
-5. Seperate Cluster Based On the following considerations
-
-   **1. Regulatory/Compliance Requirements**
-  regulatory_separation:
-    - student_personal_data: "GDPR/HK Privacy Ordinance"
-    - examination_data: "Exam authority requirements"
-    - financial_data: "Audit and compliance"
-    
-  **2. Security Boundaries**
-  security_domains:
-    - internet_facing: "High risk, exposed apps"
-    - internal_only: "School network only"
-    - vpn_required: "Sensitive admin systems"
-    
-  **3. Business Criticality**
-  sla_differences:
-    - tier_1_critical: "99.99% uptime, exam systems"
-    - tier_2_important: "99.9% uptime, learning platforms"
-    - tier_3_standard: "99.5% uptime, admin tools"
-    
-  **4. Team/Organizational Structure**
-  team_autonomy:
-    - different_teams: "Each team owns their cluster"
-    - different_budgets: "Separate cost centers"
-    - different_deployment_schedules: "Independent upgrade cycles"
-    
-  **5. Technical Requirements**
-  technical_divergence:
-    - windows_vs_linux: "Different node OS requirements"
-    - gpu_nodes: "AI/ML workloads"
-    - special_hardware: "High-performance storage"
-    
-  **6. Risk Management**
-  blast_radius_control:
-    - critical_exam_periods: "Isolate exam systems"
-    - geographic_separation: "Different data centers"
-    - upgrade_safety: "Gradual K8s version upgrades"
-
-  **1. Regulatory/Compliance Requirements**
-  regulatory_separation:
-    - student_personal_data: "GDPR/HK Privacy Ordinance"
-    - examination_data: "Exam authority requirements"
-    - financial_data: "Audit and compliance"
-    
-  **2. Security Boundaries**
-  security_domains:
-    - internet_facing: "High risk, exposed apps"
-    - internal_only: "School network only"
-    - vpn_required: "Sensitive admin systems"
-    
-  **3. Business Criticality**
-  sla_differences:
-    - tier_1_critical: "99.99% uptime, exam systems"
-    - tier_2_important: "99.9% uptime, learning platforms"
-    - tier_3_standard: "99.5% uptime, admin tools"
-    
-  **4. Team/Organizational Structure**
-  team_autonomy:
-    - different_teams: "Each team owns their cluster"
-    - different_budgets: "Separate cost centers"
-    - different_deployment_schedules: "Independent upgrade cycles"
-    
-  **5. Technical Requirements**
-  technical_divergence:
-    - windows_vs_linux: "Different node OS requirements"
-    - gpu_nodes: "AI/ML workloads"
-    - special_hardware: "High-performance storage"
-    
-  **6. Risk Management**
-  blast_radius_control:
-    - critical_exam_periods: "Isolate exam systems"
-    - geographic_separation: "Different data centers"
-    - upgrade_safety: "Gradual K8s version upgrades"
-
-  **Benefits Multi-Cluster**
-  benefits:
-    risk_reduction: "No single point of failure"
-    team_autonomy: "Faster feature development"
-    compliance: "Easier audit and certification"
-    upgrade_safety: "Gradual upgrades, less risk"
 
 
 ## Suggested github directory structure for multi cluster implementation

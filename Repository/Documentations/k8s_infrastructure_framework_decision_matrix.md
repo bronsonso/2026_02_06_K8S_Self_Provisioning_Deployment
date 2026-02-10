@@ -1,10 +1,6 @@
-# Kubernetes Deployment: Bare Metal vs VM/HCI Comparison
+## Kubernetes Deployment: Bare Metal vs VM/HCI Comparison
 
-## Infrastructure & Architecture
-
-# Kubernetes Deployment Comparison: Bare Metal vs VM/Hypervisor vs HCI
-
-## Performance Characteristics
+### Performance Characteristics
 
 | Aspect | Bare Metal K8s | VM/Hypervisor (Hyper-V/ESXi) | HCI (Harvester) |
 | :--- | :--- | :--- | :--- |
@@ -15,7 +11,7 @@
 | **Boot/Startup Time** | ⭐⭐⭐⭐ (OS + K8s boot) | ⭐⭐⭐ (Hypervisor + VM + K8s) | ⭐⭐⭐⭐ (Integrated boot) |
 | **Resource Overhead** | 5-10% total | 20-30% total | 15-25% total |
 
-## Resource Efficiency & Cost
+### Resource Efficiency & Cost
 
 | Aspect | Bare Metal K8s | VM/Hypervisor | HCI (Harvester) |
 | :--- | :--- | :--- | :--- |
@@ -26,7 +22,7 @@
 | **Power/Cooling** | Higher per workload | Lower per workload | Medium per workload |
 | **3-Year TCO** | Lowest for pure K8s | Highest with licenses | Medium (no license cost) |
 
-## Features & Capabilities
+### Features & Capabilities
 
 | Feature | Bare Metal K8s | VM/Hypervisor | HCI (Harvester) |
 | :--- | :--- | :--- | :--- |
@@ -38,7 +34,7 @@
 | **Self-Service Portal** | Need separate solution | vCenter/SCVMM | ✅ Built-in Harvester UI |
 | **Multi-tenancy** | K8s namespaces only | ✅ Strong VM isolation | ✅ K8s namespaces + projects |
 
-## Operational Management
+### Operational Management
 
 | Operational Aspect | Bare Metal K8s | VM/Hypervisor | HCI (Harvester) |
 | :--- | :--- | :--- | :--- |
@@ -49,7 +45,7 @@
 | **Patch Management** | OS + K8s updates | Hypervisor + VM + K8s | Integrated K8s updates |
 | **Skill Requirements** | K8s + hardware skills | Virtualization + K8s skills | K8s skills only |
 
-## Scalability & Flexibility
+### Scalability & Flexibility
 
 | Scalability Factor | Bare Metal K8s | VM/Hypervisor | HCI (Harvester) |
 | :--- | :--- | :--- | :--- |
@@ -60,7 +56,7 @@
 | **Storage Scaling** | Separate storage scaling | Integrated with hypervisor | ✅ Auto-scale with nodes |
 | **Multi-cluster Management** | Need external solution | vCenter/SCVMM management | ✅ Rancher integration |
 
-## Security & Compliance
+### Security & Compliance
 
 | Security Aspect | Bare Metal K8s | VM/Hypervisor | HCI (Harvester) |
 | :--- | :--- | :--- | :--- |
@@ -71,7 +67,7 @@
 | **Network Security** | CNI network policies | Hypervisor firewalls + CNI | Integrated network policies |
 | **Certifications** | OS certifications | ✅ Common (ISO, SOC, etc.) | Limited (evolving) |
 
-## Use Case Recommendations
+### Use Case Recommendations
 
 | Use Case | Recommended | Why |
 | :--- | :--- | :--- |
@@ -84,7 +80,7 @@
 | **Enterprise Data Centers** | ✅ VM/Hypervisor | Mature backup/DR/HA features |
 | **Developer Self-Service** | ✅ HCI (Harvester) | Integrated VM + container platform |
 
-## Pros & Cons Summary
+### Pros & Cons Summary
 
 ### Bare Metal Kubernetes
 **✅ Pros:**
@@ -140,7 +136,7 @@
 
 
 
-## Resource Projection
+### Resource Projection
 | Resource Type | Bare Metal K8s | VM/Hypervisor (ESXi) | HCI (Harvester) | Notes |
 | :--- | :--- | :--- | :--- | :--- |
 | **Total System Overhead** | 5-10% | 20-30% | 15-25% | Base overhead before K8s |
@@ -150,7 +146,7 @@
 | **Network Overhead** | <1% | 3-8% | 5-10% | Virtual switching, encapsulation |
 
 
-## Decision Matrix
+### Decision Matrix
 
 | Decision Factor | Choose Bare Metal When... | Choose VM/Hypervisor When... | Choose HCI When... |
 | :--- | :--- | :--- | :--- |
@@ -163,7 +159,7 @@
 | **Time to Market** | Can accept longer setup | Need to leverage existing infra | Want integrated solution |
 | **Hardware Refresh** | Planned downtime acceptable | Live migration needed | Rolling updates acceptable |
 
-## Resource Requirements Example
+### Resource Requirements Example
 
 ### For 100 vCPU, 200GB RAM, 2TB Storage Workload:
 
