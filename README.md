@@ -14,6 +14,7 @@
 | **7** | **OBSERVE** | Monitoring and observability | Prometheus, Grafana, ELK | Running applications | Metrics, logs, alerts |
 | **8** | **MAINTAIN** | Optimization and cleanup | Custom operators, CronJobs | Time/usage data | Optimized resources |
 
+<br><br><br>
 
 ## K8S Complete Infrastructure Decision Matrix
 | Stage | Purpose | Popular Choices | Lightweight/Option | Enterprise/Option | Cloud Native/Option |
@@ -37,14 +38,8 @@
 | 17. Secret Management | Secret storage | HashiCorp Vault, External Secrets | Sealed Secrets | HashiCorp Vault Enterprise | AWS Secrets Manager, GCP Secret Manager |
 
 
+<br><br><br>
 
-.\d
-.\d
-<br>a
-<br>a
-  c
-  c
-  
 ## K8S Complete Pipeline Overview
 
 | Stage | Name | Purpose | Primary Tools | Input | Output |
@@ -57,6 +52,8 @@
 | **6** | **CD** | Release and deployment | Flux CD Auto, Argo Rollouts, Spinnaker | New container images | Updated running applications |
 | **7** | **OBSERVE** | Monitoring and observability | Prometheus, Grafana, ELK | Running applications | Metrics, logs, alerts |
 | **8** | **MAINTAIN** | Optimization and cleanup | Custom operators, CronJobs | Time/usage data | Optimized resources |
+
+<br><br><br>
 
 ## Workflow Overview
 
