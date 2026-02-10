@@ -1,11 +1,11 @@
-### General Information
+## General Information
 Project Name: K8S Self Provisioning Deployment<br>
 Version: 1.0<br>
 Date: 2026-01-21<br>
 Project Owner: Bronson So<br>
 
 
-### Background and Objectives
+## Background and Objectives
 ```
 ✅ CURRENT:
 - 700 VMs on KVM/OpenVZ
@@ -21,7 +21,7 @@ Project Owner: Bronson So<br>
 - HCI integration
 ```
 
-### Considerations
+## Considerations
  - Bare metal vs VM [Link](./Repository/Documentations/k8s_bare_metal_vm_decision_matrix.md)
  - HCI integration [Link](./Repository/Documentations/hci_infrastructure_framework_decision_matrix.md)
  - Single vs multi cluster implementation [Link](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
