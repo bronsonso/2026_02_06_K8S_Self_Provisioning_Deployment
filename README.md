@@ -29,7 +29,7 @@ Project Owner: Bronson So<br>
  - Single vs multi cluster implementation [Link](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
  - K8S Infrastructure Decision Matrix [Link](./Repository/Documentations/k8s_single_multi_cluster_dk8s_infrastructure_framework_decision_matrixecision_matrix.md)
 
-<br><br><br>
+<br>
 
 ## K8S Pipeline Decision Matrix
 
@@ -44,7 +44,7 @@ Project Owner: Bronson So<br>
 | **7** | **OBSERVE** | Monitoring and observability | Prometheus, Grafana, ELK | Running applications | Metrics, logs, alerts |
 | **8** | **MAINTAIN** | Optimization and cleanup | Custom operators, CronJobs | Time/usage data | Optimized resources |
 
-<br><br><br>
+<br>
 
 ## Workflow Overview
 
@@ -59,7 +59,7 @@ Project Owner: Bronson So<br>
 | **7** | **RESOURCE_DEPLOYMENT** | GitOps syncs configuration to Kubernetes | FluxCD, Kubernetes | GitOps System |
 | **8** | **NOTIFICATION** | User notified of resource availability | Email, Slack | Notification System |
 
-<br><br><br>
+<br>
 
 ## Considerations
 1. maintenance cost
@@ -70,7 +70,7 @@ Project Owner: Bronson So<br>
 3. future resoureces provisioning
 4. RBAC
 
-
+<br>
 
 ## Suggested github directory structure for multi cluster implementation
 ### Your Git repo becomes:
@@ -96,25 +96,7 @@ clusters/
 
 ## Cluster Map
 # Architecture:
-```
-┌─────────────────────┐     ┌─────────────────────┐
-│   Cluster-East      │     │   Cluster-West      │
-│  (Rack A - 25 nodes)│     │  (Rack B - 25 nodes)│
-│                     │     │                     │
-│  • Full app stack   │     │  • Full app stack   │
-│  • K8s control plane│     │  • K8s control plane│
-│  • Local storage    │     │  • Local storage    │
-└──────────┬──────────┘     └──────────┬──────────┘
-           │                            │
-           └─────────────┬──────────────┘
-                         │
-           ┌─────────────▼─────────────┐
-           │    Shared Storage (SAN)   │
-           │  • NFS/SMB for failover   │
-           │  • iSCSI for block storage│
-           │  • Min 2 storage heads    │
-           └───────────────────────────┘
-```
+
 
 ' why 3 database for k8s
 ' can namespace has inheritance
