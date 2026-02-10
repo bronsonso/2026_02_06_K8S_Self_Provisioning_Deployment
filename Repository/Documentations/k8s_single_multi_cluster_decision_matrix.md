@@ -1,7 +1,7 @@
 
 ## K8S Single / Multi-Cluster Decision Matrix
 
-1. Seperate Cluster Based On the following considerations
+### Seperate Cluster Based On the following considerations
 
    **1. Regulatory/Compliance Requirements**
   regulatory_separation:
