@@ -24,15 +24,10 @@ Project Owner: Bronson So<br>
 <br><br>
 
 ## Considerations
-### Bare metal vs VM
-- K8S infrastructure framework decision [Link](./Repository/Documentations/k8s_bare_metal_vm_decision_matrix.md)
-### HCI integration
-- [Link](./Repository/Documentations/hci_infrastructure_framework_decision_matrix.md)
-### Single vs multi cluster implementation
-- [Link](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
-## K8S Infrastructure Decision Matrix
-- [Link](./Repository/Documentations/k8s_single_multi_cluster_dk8s_infrastructure_framework_decision_matrixecision_matrix.md)
-
+ - Bare metal vs VM [Link](./Repository/Documentations/k8s_bare_metal_vm_decision_matrix.md)
+ - HCI integration [Link](./Repository/Documentations/hci_infrastructure_framework_decision_matrix.md)
+ - Single vs multi cluster implementation [Link](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
+ - K8S Infrastructure Decision Matrix [Link](./Repository/Documentations/k8s_single_multi_cluster_dk8s_infrastructure_framework_decision_matrixecision_matrix.md)
 
 <br><br><br>
 
