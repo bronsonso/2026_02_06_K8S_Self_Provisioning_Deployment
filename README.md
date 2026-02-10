@@ -1,8 +1,8 @@
 ## General Information
-Project Name: K8S Self Provisioning Deployment
-Version: 1.0
-Date: 2026-01-21
-Project Owner: Bronson So
+Project Name: K8S Self Provisioning Deployment<br>
+Version: 1.0<br>
+Date: 2026-01-21<br>
+Project Owner: Bronson So<br>
 
 <br><br>
 
@@ -34,6 +34,7 @@ Project Owner: Bronson So
 <br><br>
 
 ## K8S Infrastructure Decision Matrix
+<details>
 | Stage | Purpose | Popular Choices | Lightweight/Option | Enterprise/Option | Cloud Native/Option |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1. Host OS | Base operating system | Ubuntu LTS, RHEL, Rocky Linux | Fedora CoreOS | RHEL, SUSE Linux ES | Bottlerocket, VMware Photon |
@@ -54,6 +55,7 @@ Project Owner: Bronson So
 | 16. Security | Policy & scanning | Kyverno, OPA/Gatekeeper, Trivy | Falco, Trivy | Aqua, Prisma Cloud, Snyk | AWS Security Hub, GCP Security |
 | 17. Secret Management | Secret storage | HashiCorp Vault, External Secrets | Sealed Secrets | HashiCorp Vault Enterprise | AWS Secrets Manager, GCP Secret Manager |
 
+</details>
 <br><br><br>
 
 ## K8S Pipeline Decision Matrix
