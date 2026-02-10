@@ -68,11 +68,22 @@
 | **7** | **RESOURCE_DEPLOYMENT** | GitOps syncs configuration to Kubernetes | FluxCD, Kubernetes | GitOps System |
 | **8** | **NOTIFICATION** | User notified of resource availability | Email, Slack | Notification System |
 
+<br><br><br>
+
+
 ## Considerations
 1. maintenance cost
 2. cost management
+3. utilization
+4. agile infrastructure
+5. self provisioning
 3. future resoureces provisioning
 4. RBAC
+
+K8S infrastructure framework decision [Path](./Repository/Documentations/k8s_infrasturcture_framework_comparison.md)
+1) k8s on bare metal
+2) k8s on VM/HCI
+
 
 5. Seperate Cluster Based On the following considerations
 
