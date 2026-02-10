@@ -35,6 +35,7 @@ Project Owner: Bronson So<br>
 
 ## K8S Infrastructure Decision Matrix
 <details>
+```
 | Stage | Purpose | Popular Choices | Lightweight/Option | Enterprise/Option | Cloud Native/Option |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1. Host OS | Base operating system | Ubuntu LTS, RHEL, Rocky Linux | Fedora CoreOS | RHEL, SUSE Linux ES | Bottlerocket, VMware Photon |
@@ -54,7 +55,7 @@ Project Owner: Bronson So<br>
 | 15. Visualization | Dashboards | Grafana, Kibana | Grafana (OSS) | Grafana Enterprise, Kibana | AWS Managed Grafana |
 | 16. Security | Policy & scanning | Kyverno, OPA/Gatekeeper, Trivy | Falco, Trivy | Aqua, Prisma Cloud, Snyk | AWS Security Hub, GCP Security |
 | 17. Secret Management | Secret storage | HashiCorp Vault, External Secrets | Sealed Secrets | HashiCorp Vault Enterprise | AWS Secrets Manager, GCP Secret Manager |
-
+```
 </details>
 <br><br><br>
 
