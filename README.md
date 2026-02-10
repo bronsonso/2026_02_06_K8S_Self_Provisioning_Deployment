@@ -35,13 +35,16 @@
 | 15. Visualization | Dashboards | Grafana, Kibana | Grafana (OSS) | Grafana Enterprise, Kibana | AWS Managed Grafana |
 | 16. Security | Policy & scanning | Kyverno, OPA/Gatekeeper, Trivy | Falco, Trivy | Aqua, Prisma Cloud, Snyk | AWS Security Hub, GCP Security |
 | 17. Secret Management | Secret storage | HashiCorp Vault, External Secrets | Sealed Secrets | HashiCorp Vault Enterprise | AWS Secrets Manager, GCP Secret Manager |
-.\d
-.\d
-<br>a
-<br>a
-  c
-  c
 
+
+
+.\d
+.\d
+<br>a
+<br>a
+  c
+  c
+  
 ## K8S Complete Pipeline Overview
 
 | Stage | Name | Purpose | Primary Tools | Input | Output |
