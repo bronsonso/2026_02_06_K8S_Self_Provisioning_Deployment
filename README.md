@@ -28,7 +28,7 @@ Project Owner: Bronson So<br>
  - HCI integration [Link](./Repository/Documentations/hci_infrastructure_framework_decision_matrix.md)
  - Single vs multi cluster implementation [Link](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
  - K8S Infrastructure Decision Matrix [Link](./Repository/Documentations/k8s_infrastructure_framework_decision_matrix.md)
-
+ - Components EOSL [Link](./Repository/Documentations/eosl.md)
 <br>
 
 ## K8S Pipeline Decision Matrix
