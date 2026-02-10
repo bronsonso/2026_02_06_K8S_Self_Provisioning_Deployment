@@ -20,9 +20,8 @@ Project Owner: Bronson So<br>
 - Self-service platform
 - HCI integration
 ```
-<br><br>
 
-## Considerations
+### Considerations
  - Bare metal vs VM [Link](./Repository/Documentations/k8s_bare_metal_vm_decision_matrix.md)
  - HCI integration [Link](./Repository/Documentations/hci_infrastructure_framework_decision_matrix.md)
  - Single vs multi cluster implementation [Link](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
