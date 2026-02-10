@@ -1,4 +1,4 @@
-## General Information
+### General Information
 Project Name: K8S Self Provisioning Deployment<br>
 Version: 1.0<br>
 Date: 2026-01-21<br>
@@ -6,7 +6,7 @@ Project Owner: Bronson So<br>
 
 <br>
 
-## Background and Objectives
+### Background and Objectives
 ```
 ✅ CURRENT:
 - 700 VMs on KVM/OpenVZ
