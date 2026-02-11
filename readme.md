@@ -150,21 +150,8 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
    1. We're implementing a production-ready infrastructure platform that leverages Harvester HCI to create a unified virtualization and container environment on 5 Dell R610 servers. The solution provides both VM and Kubernetes capabilities through a single management interface, with Rancher for multi-cluster orchestration and RKE2 for enterprise-grade Kubernetes. Legacy systems will migrate to Harvester VMs, while modern applications will deploy to RKE2 clusters, following an 80% container, 20% VM adoption strategy. The platform includes built-in security compliance, vm scaling, Infrastructure-as-Code support, and GitOps pipelines to enable developer self-service while maintaining operational control.
    
    2. Schedule & Phasing<br>
-      Time-bound roadmap with clear milestones, deliverables, and risk-mitigation checkpoints.
-      - **Phase 1: Proof of Concept & Testing**<br>
-        - Deploy Harvester HCI on 2 hosts.<br>
-        - Install Rancher for cluster management.<br>
-        - Provision RKE2 clusters (dev, prod).<br>
-        - Migrate 10% of representative workloads (high/low usage, VM/container, legacy/modern, web/database/CMS).<br>
-      - **Phase 2: Fine-Tuning & Validation**<br>
-        - Optimize Kubernetes configurations based on PoC results.
-        - Validate performance, resilience, and operational procedures.
-      - **Phase 3: Production Migration**<br>
-        - Scale platform to full capacity (30+ servers).<br>
-        - Execute phased migration of remaining ~700 systems.<br>
-      - **Phase 4: Advanced Capabilities & SASE Integration**<br>
-        - Implement Secure Access Service Edge (SASE) for secure multi-site connectivity.
-        - Deploy developer portal (Backstage) for self-service provisioning.   
+      [References](./implementation_plan/schedule_and_phasing.md)
+      
 
 
 
