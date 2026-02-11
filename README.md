@@ -33,12 +33,6 @@ Project Owner: Bronson So<br>
 ### 1. Overview
 Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
 
-   1. Technology Stack
-      Key architectural and platform decisions that will shape the solution’s design, scalability, and lifecycle management.
-      - Bare metal vs Virtualized Infrastructure
-        Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes.
-        [References](./Repository/Documentations/k8s_bare_metal_vm_decision_matrix.md)
-
 **Goal**: Replace ~700 legacy VM and container workloads with a modern, on-premises Kubernetes platform that enables self-provisioning for development teams while lowering operational costs.
 
 **Approach**:
@@ -71,20 +65,20 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
 ## Considerations
    1. Technology Stack
       Key architectural and platform decisions that will shape the solution’s design, scalability, and lifecycle management.
-      - Bare metal vs Virtualized Infrastructure
+      - Bare metal vs Virtualized Infrastructure<br>
         Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes.
         [References](./Repository/Documentations/k8s_bare_metal_vm_decision_matrix.md)
       - HCI integration Strategy
-        Compare the performance of K8S on HCI and selection of Hyper-Converged Infrastructure platform (e.g., Harvester) for integrated compute, storage, and networking.
+        Compare the performance of K8S on HCI and selection of Hyper-Converged Infrastructure platform (e.g., Harvester) for integrated compute, storage, and networking.<br>
         [References](./Repository/Documentations/hci_infrastructure_framework_decision_matrix.md)
       - Cluster Topology
-        Single vs. multi-cluster design based on isolation, security, and operational requirements.
+        Single vs. multi-cluster design based on isolation, security, and operational requirements.<br>
         [References](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
       - Kubernetes Infrastructure Framework
-        Choice of Kubernetes distribution, networking (CNI), storage (CSI), and ingress, etc...
+        Choice of Kubernetes distribution, networking (CNI), storage (CSI), and ingress, etc...<br>
         [References](./Repository/Documentations/k8s_infrastructure_framework_decision_matrix.md)
       - Component End-of-Life/Support (EOSL)
-        Ensure all selected software and hardware components are within supported lifecycles.
+        Ensure all selected software and hardware components are within supported lifecycles.<br>
         [References](./Repository/Documentations/eosl.md)
 
    2. Resources estimation
