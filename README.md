@@ -63,7 +63,7 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
 <br>
 
 ## Considerations
-   1. Technology Stack
+   1. Technology Stack<br>
       Key architectural and platform decisions that will shape the solution’s design, scalability, and lifecycle management.
       - **Bare metal vs Virtualized Infrastructure**<br>
         Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes.<br>
@@ -92,13 +92,17 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
       - **Kubernetes Overhead Calculation**<br>
         Justification for additional resources needed for K8s control plane, worker nodes, and system overhead.
 
-
-
    2. Business (Cost)
-      - TCO
-        - Running cost
-        - Setup cost
-      - ROI
+      Financial modeling to justify investment and forecast long-term operational impact.
+
+Total Cost of Ownership (TCO)
+
+Setup Costs: Hardware, software licenses, professional services, training.
+
+Running Costs: Power, cooling, maintenance, support subscriptions.
+
+Return on Investment (ROI)
+Quantify savings from infrastructure consolidation, improved efficiency, and reduced operational overhead.
    3. Security
       - Compliances 27001, CISA, NIST
       - Hardening on components
