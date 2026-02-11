@@ -158,7 +158,7 @@ Structured knowledge management and version control for long-term maintainabilit
 |-----------|---------|
 | **Implementation Procedures** | Runbooks for deployment, upgrades, and disaster recovery |
 | **Credentials & Secrets Management** | Secure storage and rotation of access keys, certificates, passwords |
-| **Repository Structure** | Organized version control for IaC, manifests, documentation, policies |
+| [**Repository Structure**](./repository/documentations/github_structure.md) | Organized version control for IaC, manifests, documentation, policies |
 | **Namespace Design & Governance** | Logical grouping for tenants, applications, and environments within K8s |
 
 </details>
@@ -278,58 +278,6 @@ We're implementing a production-ready infrastructure platform that leverages Har
 
 ---
 
-## 🏗️ Architecture Components
-
-### Suggested GitHub Directory Structure
-[GitHub Structure Documentation](./repository/documentations/github_structure.md)
-
-### Suggested Namespace Design
-*Content pending*
-
-### Network Diagram
-[Network Topology](./network/k8s_infra_v2.svg)
-
-### Cluster Map
-*Content pending*
-
----
-
-## ❓ Frequently Asked Questions
-
-<details>
-<summary><strong>Why 3 databases for Kubernetes?</strong></summary>
-
-Kubernetes typically uses three database components for high availability and data separation:
-
-1. **etcd**: The primary distributed key-value store for Kubernetes cluster state
-2. **Container Registry Database**: For storing container image metadata
-3. **Monitoring/Logging Database**: For metrics and logs (Prometheus, Loki, etc.)
-
-This separation ensures:
-- Isolation of concerns
-- Independent scaling
-- Different backup strategies
-- Reduced single points of failure
-
-</details>
-
-<details>
-<summary><strong>Can namespaces have inheritance in Kubernetes?</strong></summary>
-
-**No**, Kubernetes namespaces do not support inheritance natively. However, you can achieve similar outcomes through:
-
-1. **Helm Chart Dependencies**: Parent charts that include child configurations
-2. **Kustomize Overlays**: Base configurations with environment-specific patches
-3. **Policy Propagation Tools**: Using tools like Kyverno or OPA Gatekeeper to propagate policies
-4. **GitOps Patterns**: Template repositories that generate namespace configurations
-5. **Operators**: Custom operators that manage namespace hierarchies
-
-Best practice is to use a combination of GitOps and policy tools rather than relying on native inheritance.
-
-</details>
-
----
-
 ## 📊 Progress Tracking
 
 | Section | Status | Last Updated | Owner |
@@ -340,8 +288,3 @@ Best practice is to use a combination of GitOps and policy tools rather than rel
 | Appendices | ✅ Complete | 2026-01-21 | Bronson So |
 | All Other Sections | ⏳ Pending | - | - |
 
----
-
-**Last Updated**: 2026-01-21  
-**Next Review**: 2026-02-01  
-**Document ID**: K8S-SPP-PLAN-1.0
