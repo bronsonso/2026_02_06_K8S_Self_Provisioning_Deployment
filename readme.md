@@ -46,7 +46,94 @@
 ---
 
 ## 2. Project Scope & Objectives
-*To be completed*
+
+<details>
+<summary><strong>2.1 In-Scope Components</strong></summary>
+<blockquote>
+<strong>📦 Infrastructure Foundation</strong>
+
+- Deployment of Harvester HCI cluster on 5 Dell R610 servers (initial pilot)
+- Expansion to 30+ servers for full production deployment
+- Implementation of distributed storage using Longhorn
+- Network segmentation and SD-WAN/SASE integration
+
+<summary><strong>🛠️ Platform Services</strong></summary>
+
+- Rancher multi-cluster management platform installation
+- RKE2 Kubernetes clusters (development and production environments)
+- CI/CD pipeline implementation with GitOps (Flux/ArgoCD)
+- Centralized monitoring, logging, and alerting stack
+
+<summary><strong>🚚 Application Migration</strong></summary>
+
+- Assessment and migration of all 700 existing systems
+- Containerization of compatible applications (target: 80% container adoption)
+- Legacy VM migration to Harvester for incompatible systems (target: 20% remaining as VMs)
+- Data migration strategy for persistent storage requirements
+
+<summary><strong>⚙️ Operational Enablement</strong></summary>
+
+- Infrastructure as Code (Terraform/Ansible) implementation
+- Self-service developer portal and catalog
+- Comprehensive documentation and runbooks
+- Team training and knowledge transfer
+
+</blockquote>
+</details>
+
+<details>
+<summary><strong>2.2 Out-of-Scope Items</strong></summary>
+<blockquote>
+
+- ❌ Application code refactoring or redevelopment
+- ❌ Major network infrastructure upgrades beyond SD-WAN integration
+- ❌ Legacy hardware refresh beyond the identified servers
+- ❌ Third-party application licensing negotiations
+- ❌ Business process re-engineering unrelated to infrastructure
+- ❌ End-user device upgrades or changes
+
+</blockquote>
+</details>
+
+<details>
+<summary><strong>2.3 Success Criteria</strong></summary>
+<blockquote>
+
+<strong>Technical Success Criteria</strong>
+- ✅ All 700 systems successfully migrated to new platform
+- ✅ Zero data loss during migration process
+- ✅ Platform availability of 99.9% post-migration
+- ✅ Automated scaling operational for both VMs and containers
+- ✅ Full backup and disaster recovery capabilities implemented
+
+<strong>Business Success Criteria</strong>
+- ✅ 30% reduction in infrastructure operational costs within 12 months
+- ✅ 80% reduction in application deployment time
+- ✅ Positive feedback from development teams on platform usability
+- ✅ Successful audit for ISO 27001 compliance
+- ✅ All critical business applications operating on new platform
+
+</blockquote>
+</details>
+
+<details>
+<summary><strong>2.4 Deliverables Matrix</strong></summary>
+
+
+| Deliverable | Description | Owner | Due Date | Status | Dependencies |
+|-------------|-------------|-------|----------|--------|--------------|
+| **HCI Cluster Deployment** | Production-ready Harvester HCI cluster on 5 Dell R610 servers with HA configuration | Infrastructure Team | Phase 1 (Week 4) | Not Started | Hardware delivery, Network configuration |
+| **Kubernetes Platform** | RKE2 clusters (dev/prod) with Rancher management plane | Platform Team | Phase 2 (Week 8) | Not Started | HCI Cluster operational |
+| **Migration Assessment Report** | Detailed analysis of all 700 systems with migration categorization | Migration Team | Phase 3 (Week 6) | Not Started | Resource utilization data |
+| **CI/CD Pipeline** | GitOps implementation with Flux/ArgoCD and self-service capabilities | DevOps Team | Phase 4 (Week 12) | Not Started | K8s Platform operational |
+| **Monitoring Stack** | Prometheus/Grafana/Loki stack with custom dashboards and alerting | Operations Team | Phase 5 (Week 10) | Not Started | Platform deployment complete |
+| **Security Framework** | ISO 27001 controls implementation with audit documentation | Security Team | Phase 6 (Week 16) | Not Started | Platform baseline established |
+| **Backup/DR Solution** | Velero + Longhorn backup strategy with DR runbooks | Operations Team | Phase 7 (Week 14) | Not Started | Storage configuration complete |
+| **Automation Framework** | Infrastructure as Code (Terraform/Ansible) for all components | DevOps Team | Phase 8 (Week 18) | Not Started | Platform standardized |
+| **Documentation Portal** | Complete operational runbooks, procedures, and knowledge base | Technical Writer | Phase 9 (Week 20) | Not Started | All systems migrated |
+| **Training Program** | Team enablement materials and hands-on workshops | Training Lead | Phase 10 (Week 22) | Not Started | Documentation complete |
+
+</details>
 
 ---
 
