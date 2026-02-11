@@ -66,18 +66,18 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
    1. Technology Stack
       Key architectural and platform decisions that will shape the solution’s design, scalability, and lifecycle management.
       - Bare metal vs Virtualized Infrastructure<br>
-        Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes.
+        Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes.<br>
         [References](./Repository/Documentations/k8s_bare_metal_vm_decision_matrix.md)
-      - HCI integration Strategy
+      - HCI integration Strategy<br>
         Compare the performance of K8S on HCI and selection of Hyper-Converged Infrastructure platform (e.g., Harvester) for integrated compute, storage, and networking.<br>
         [References](./Repository/Documentations/hci_infrastructure_framework_decision_matrix.md)
-      - Cluster Topology
+      - Cluster Topology<br>
         Single vs. multi-cluster design based on isolation, security, and operational requirements.<br>
         [References](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
-      - Kubernetes Infrastructure Framework
+      - Kubernetes Infrastructure Framework<br>
         Choice of Kubernetes distribution, networking (CNI), storage (CSI), and ingress, etc...<br>
         [References](./Repository/Documentations/k8s_infrastructure_framework_decision_matrix.md)
-      - Component End-of-Life/Support (EOSL)
+      - Component End-of-Life/Support (EOSL)<br>
         Ensure all selected software and hardware components are within supported lifecycles.<br>
         [References](./Repository/Documentations/eosl.md)
 
