@@ -1,7 +1,7 @@
 ## File Structure
-Convention: snake_case
-Singular
-Use for: Files, directories, configuration files, data files, scripts
+Convention: snake_case<br>
+Singular form<br>
+Use for: Files, directories, configuration files, data files, scripts<br>
 
 Examples:
 ```
