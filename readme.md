@@ -8,10 +8,12 @@ Project Owner: Bronson So<br>
 
 ## Table of Content
 ### Executive Summary
+
     <details>
     <summary> 1. Project Background </summary>
     This project addresses the modernization of our legacy application hosting infrastructure, which currently consists of approximately 700 systems distributed across KVM virtual machines and OpenVZ containers. The existing environment operates on disparate technologies with varying lifecycle stages, leading to operational inefficiencies, rising maintenance costs, and limited scalability. As business demands evolve, the current infrastructure cannot adequately support emerging requirements for rapid deployment, elastic scaling, and developer self-service capabilities. This initiative represents a strategic transformation to establish a unified, modern platform that aligns with industry best practices and positions the organization for future growth.
     </details>
+    
     2. Business Objectives ✅
     3. Key Success Metrics
 ### Technical Considerations    
