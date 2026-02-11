@@ -64,12 +64,15 @@ Key architectural and platform decisions that will shape the solution's design, 
 
 | Consideration | Description | Reference |
 |---------------|-------------|-----------|
-| **Bare metal vs Virtualized Infrastructure** | Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes | [Decision Matrix](./repository/documentations/k8s_bare_metal_vm_decision_matrix.md) |
-| **HCI Integration Strategy** | Compare performance of K8S on HCI and selection of Hyper-Converged Infrastructure platform (e.g., Harvester) | [Decision Matrix](./repository/documentations/hci_infrastructure_framework_decision_matrix.md) |
-| **Cluster Topology** | Single vs. multi-cluster design based on isolation, security, and operational requirements | [Decision Matrix](./repository/documentations/k8s_single_multi_cluster_decision_matrix.md) |
-| **Kubernetes Infrastructure Framework** | Choice of K8s distribution, networking (CNI), storage (CSI), and ingress | [Decision Matrix](./repository/documentations/k8s_infrastructure_framework_decision_matrix.md) |
-| **Component End-of-Life/Support (EOSL)** | Ensure all selected components are within supported lifecycles | [EOSL Tracking](./repository/documentations/eosl.md) |
-
+| **Bare metal vs Virtualized Infrastructure** | Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes | [Doc](./repository/documentations/project_plan/technical_consideration/k8s_bare_metal_vm_decision_matrix.md) |
+| **HCI Integration Strategy** | Compare performance of K8S on HCI and selection of Hyper-Converged Infrastructure platform (e.g., Harvester) | [Doc](./repository/documentations/project_plan/technical_consideration/hci_infrastructure_framework_decision_matrix.md) |
+| **K8S Cluster Topology Analysis** | Single vs. multi-cluster design based on isolation, security, and operational requirements | [Doc](./repository/documentations/project_plan/technical_consideration/k8s_single_multi_cluster_decision_matrix.md) |
+| **K8S Distributions** | Choice of K8s distributions: k3s, kubeadm, rke2, kind, etc... | [Doc](./repository/documentations/project_plan/technical_consideration/k8s_distribution_analysis.md) |
+| **K8S Infrastructure Components** | Choice of K8s components: control plane, networking (CNI), storage (CSI), and ingress | [Doc](./repository/documentations/project_plan/technical_consideration/k8s_infrastructure_component_analysis.md) |
+| **Rancher & RKE2 Components Coverage** | Rancher and RKE2 components coverage in k8s framework | [Doc](./repository/documentations/project_plan/technical_consideration/rancher_rke2_stack_coverage_matrix.md) |
+| **K8S Pipeline Components** | Choice of K8s pipeline components: CI, CD | [Doc](./repository/documentations/project_plan/technical_consideration/k8s_pipeline_decision_matrix.md) |
+| **Component End-of-Life/Support (EOSL)** | Ensure all selected components are within supported lifecycles | [Doc](./repository/documentations/project_plan/technical_consideration/eosl.md) |
+      
 </details>
 
 <details>
@@ -158,7 +161,7 @@ Structured knowledge management and version control for long-term maintainabilit
 |-----------|---------|
 | **Implementation Procedures** | Runbooks for deployment, upgrades, and disaster recovery |
 | **Credentials & Secrets Management** | Secure storage and rotation of access keys, certificates, passwords |
-| [**Repository Structure**](./repository/documentations/github_structure.md) | Organized version control for IaC, manifests, documentation, policies |
+| [**Repository Structure**](./repository/documentations/project_plan/appendix/github_structure.md) | Organized version control for IaC, manifests, documentation, policies |
 | **Namespace Design & Governance** | Logical grouping for tenants, applications, and environments within K8s |
 
 </details>
@@ -188,7 +191,7 @@ We're implementing a production-ready infrastructure platform that leverages Har
 <details>
 <summary><strong>5.2 Phases</strong></summary>
 
-[View detailed schedule and phasing](./repository/documentations/implementation_plan/schedule_and_phasing.md)
+[View detailed schedule and phasing](./repository/documentations/project_plan/implementation_plan/schedule_and_phasing.md)
 
 </details>
 
@@ -227,8 +230,6 @@ We're implementing a production-ready infrastructure platform that leverages Har
 <ol type="A">
   <li><strong>Technical Documentation</strong>
     <ol type="i">
-      <li><a href="./repository/documentations/github_structure.md">GitHub Repository Structure</a></li>
-      <li><a href="./repository/documentations/k8s_pipeline_decision_matrix.md">Kubernetes Pipeline Decision Matrix</a> - Selection of pipeline tools (Jenkins, GitLab CI, GitHub Actions, Argo CD) and strategy (GitOps vs traditional CI/CD)</li>
       <li>Workflow & Process Diagrams</li>
       <li><a href="./network/k8s_infra_v2.svg" target="_blank">Network Topology Diagrams</a></li>
       <li>Hardware Specifications</li>
