@@ -75,6 +75,15 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
 
 </details>
 
+<details>
+<summary>Click to view table</summary>
+
+```
+adada
+```
+
+</details>
+
 <br>
 
 ## Considerations
