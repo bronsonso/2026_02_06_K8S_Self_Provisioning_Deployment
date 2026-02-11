@@ -83,13 +83,13 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
 
    2. Resources estimation
       Detailed analysis of current usage and projected requirements to ensure adequate capacity and cost-effective scaling.
-      - Baseline Metrics from Legacy Environment
+      - Baseline Metrics from Legacy Environment<br>
         Aggregate RAM, CPU, storage, and network bandwidth usage from existing KVM VMs and OpenVZ containers.
-      - Existing Server Utilization for HCI Pilot
+      - Existing Server Utilization for HCI Pilot<br>
         Assessment of available capacity on 10 Dell R610/R650 servers for Phase 1 testing.
-      - New Server Procurement Forecast
+      - New Server Procurement Forecast<br>
         Projected hardware requirements for scaling to 30+ servers in production.
-      - Kubernetes Overhead Calculation
+      - Kubernetes Overhead Calculation<br>
         Justification for additional resources needed for K8s control plane, worker nodes, and system overhead.
 
 
