@@ -13,35 +13,35 @@ Project Owner: Bronson So<br>
 2. Excluded
 ### Stakeholder Management
 ### Current Environment Analysis
-    1. Applications on Openvz and KVM
-    2. Resources acquired
-    3. New project growth rate
-    4. Special policies / rules
+1. Applications on Openvz and KVM
+2. Resources acquired
+3. New project growth rate
+4. Special policies / rules
 ### Implementation Plan
-    1. Overview
-    2. Phases
+1. Overview
+2. Phases
 ### Appendix
-    1. Suggested github directory structure 
-    2. K8S Pipeline Decision Matrix
-    3. Workflow Overview
-    4. Network Diagram
+1. Suggested github directory structure 
+2. K8S Pipeline Decision Matrix
+3. Workflow Overview
+4. Network Diagram
 
 
 
 ## Background and Objectives
-    ### 1. Overview
-    Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
+### 1. Overview
+Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
 
-    Goal: Replace ~700 legacy VM and container workloads with a modern, on-premises Kubernetes platform that enables self-provisioning for development teams while lowering operational costs.
+Goal: Replace ~700 legacy VM and container workloads with a modern, on-premises Kubernetes platform that enables self-provisioning for development teams while lowering operational costs.
 
-    Approach:
-    - Build a scalable Kubernetes foundation on cost-efficient Hyper-Converged Infrastructure (HCI).
-    - Validate the solution using 5 existing Dell servers, then scale to full production.
+Approach:
+- Build a scalable Kubernetes foundation on cost-efficient Hyper-Converged Infrastructure (HCI).
+- Validate the solution using 5 existing Dell servers, then scale to full production.
 
-    Key Outcomes:
-    - Lower Costs via infrastructure consolidation and higher resource efficiency.
-    - Faster Delivery through self-service provisioning and automated resource management.
-    - Reduced Risk with a phased, pilot-tested migration strategy.
+Key Outcomes:
+- Lower Costs via infrastructure consolidation and higher resource efficiency.
+- Faster Delivery through self-service provisioning and automated resource management.
+- Reduced Risk with a phased, pilot-tested migration strategy.
 
     2. Summary
     ```
