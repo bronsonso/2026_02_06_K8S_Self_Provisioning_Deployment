@@ -23,6 +23,7 @@ Project Owner: Bronson So<br>
   </details>
   <details>
     <Summary><strong>1.3 Key Success Metrics</strong></Summary>
+    
 | Metric | Baseline | Target | Measurement Method |
 |--------|----------|--------|--------------------|
 | Infrastructure Cost/App | $X/month | 30% reduction | Financial analysis |
