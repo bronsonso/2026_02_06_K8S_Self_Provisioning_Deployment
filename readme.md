@@ -67,29 +67,42 @@ TBC
 
 ### Appendices
 <ol type="A">
-  <li>A. Technical Documentation
-    <ol type="A.1">
-      <li>A.1 GitHub Repository Structure
-      <li>A.2 Kubernetes Pipeline Decision Matrix
-    A.3 Workflow & Process Diagrams
-A.4 Network Topology Diagrams
-A.5 Hardware Specifications
+  <li><strong>Technical Documentation</strong>
+    <ol type="i">
+      <li>GitHub Repository Structure</li>
+      <li>Kubernetes Pipeline Decision Matrix</li>
+      <li>Workflow & Process Diagrams</li>
+      <li>Network Topology Diagrams</li>
+      <li>Hardware Specifications</li>
     </ol>
-B. Operational Documentation
-B.1 Deployment Procedures
-B.2 Troubleshooting Guides
-B.3 Performance Tuning Guidelines
-B.4 Security Hardening Checklists
-C. Reference Materials
-C.1 Glossary of Terms
-C.2 Acronym List
-C.3 Related Documentation Links
-C.4 Regulatory Compliance References
-D. Supporting Analysis
-D.1 Resource Utilization Reports
-D.2 Cost-Benefit Analysis
-D.3 Vendor Comparison Matrix
-D.4 Technology Evaluation Criteria
+  </li>
+  
+  <li><strong>Operational Documentation</strong>
+    <ol>
+      <li>Deployment Procedures</li>
+      <li>Troubleshooting Guides</li>
+      <li>Performance Tuning Guidelines</li>
+      <li>Security Hardening Checklists</li>
+    </ol>
+  </li>
+  
+  <li><strong>Reference Materials</strong>
+    <ol>
+      <li>Glossary of Terms</li>
+      <li>Acronym List</li>
+      <li>Related Documentation Links</li>
+      <li>Regulatory Compliance References</li>
+    </ol>
+  </li>
+  
+  <li><strong>Supporting Analysis</strong>
+    <ol>
+      <li>Resource Utilization Reports</li>
+      <li>Cost-Benefit Analysis</li>
+      <li>Vendor Comparison Matrix</li>
+      <li>Technology Evaluation Criteria</li>
+    </ol>
+  </li>
 </ol>
 <br><br>
 
