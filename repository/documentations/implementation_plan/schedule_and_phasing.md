@@ -1,6 +1,6 @@
 ## 1. Infrastructure Deployment
 ### Phase 1: Harvester HCI Cluster Setup
-**Timeline:** Week 1-2  
+**Timeline:**  
 **Objective:** Establish production-grade HCI foundation
 
 | Task | Description | Resources | Deliverables |
@@ -14,7 +14,7 @@
 ## 2. Platform Services Deployment
 
 ### Phase 2: Management Stack Implementation
-**Timeline:** Week 3-4  
+**Timeline:** 
 **Objective:** Deploy Rancher management plane and supporting services
 
 | Task | Description | Resources | Deliverables |
@@ -27,7 +27,7 @@
 ## 3. Kubernetes Platform Deployment
 
 ### Phase 3: RKE2 Cluster Provisioning
-**Timeline:** Week 5-6  
+**Timeline:**
 **Objective:** Create development and production Kubernetes environments
 
 | Task | Description | Resources | Deliverables |
@@ -41,7 +41,7 @@
 ## 4. Workload Migration Strategy
 
 ### Phase 4: Legacy System Migration
-**Timeline:** Week 7-12  
+**Timeline:**   
 **Objective:** Migrate existing systems with 2:8 VM-to-container ratio
 
 | Task | Description | Approach | Success Criteria |
@@ -55,7 +55,7 @@
 ## 5. Automation & Self-Service Enablement
 
 ### Phase 5: Platform Maturation
-**Timeline:** Week 13-16  
+**Timeline:**   
 **Objective:** Implement automation and self-service capabilities
 
 | Task | Description | Tools | Outcome |
@@ -69,7 +69,7 @@
 ## 6. Validation & Handover
 
 ### Phase 6: Platform Certification
-**Timeline:** Week 17-20  
+**Timeline:**  
 **Objective:** Validate platform against requirements and transition to operations
 
 | Task | Description | Validation Method | Acceptance Criteria |
@@ -84,12 +84,12 @@
 
 | Metric | Target | Measurement Method |
 |--------|--------|-------------------|
-| **Resource Utilization** | >70% average utilization | Monitoring dashboards |
-| **VM Provisioning Time** | <5 minutes | Process measurement |
-| **Container Deployment Time** | <2 minutes | Pipeline metrics |
+| **Resource Utilization** | >??% average utilization | Monitoring dashboards |
+| **VM Provisioning Time** | <?? minutes | Process measurement |
+| **Container Deployment Time** | <10 minutes | Pipeline metrics |
 | **Platform Availability** | 99.9% uptime | Monitoring alerts |
-| **Migration Completion** | 100% of 700 systems | Migration tracker |
-| **Cost Optimization** | 30% reduction in TCO | Financial analysis |
+| **Migration Completion** | ??% of 700 systems | Migration tracker |
+| **Cost Optimization** | ??% reduction in TCO | Financial analysis |
 
 ## Risk Mitigation
 

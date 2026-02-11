@@ -7,20 +7,23 @@ Project Owner: Bronson So<br>
 <br>
 
 ## Table of Content
-### Background and Objectives ✅
-### Considerations    
+### Executive Summary
+    1. Project Background 
+    2. Business Objectives ✅
+    3. Key Success Metrics
+### Technical Considerations    
 ### Scope
-1. Included
-2. Excluded
+    TBC
+### Implementation Plan ✅
+1. Overview ✅
+2. Phases ✅
 ### Stakeholder Management
+    TBC
 ### Current Environment Analysis
 1. Applications on Openvz and KVM
 2. Resources acquired
 3. New project growth rate
 4. Special policies / rules
-### Implementation Plan ✅
-1. Overview
-2. Phases
 ### Appendix
 1. Suggested github directory structure 
 2. K8S Pipeline Decision Matrix
@@ -60,6 +63,18 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
 - HCI integration
 ```
 
+
+<details>
+<summary>Click to view table</summary>
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Cell 1   | Cell 2   | Cell 3   |
+| Cell 4   | Cell 5   | Cell 6   |
+| Cell 7   | Cell 8   | Cell 9   |
+
+</details>
+
 <br>
 
 ## Considerations
@@ -88,6 +103,25 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
       Detailed analysis of current usage and projected requirements to ensure adequate capacity and cost-effective scaling.
       - **Baseline Metrics from Legacy Environment**<br>
         Aggregate RAM, CPU, storage, and network bandwidth usage from existing KVM VMs and OpenVZ containers.
+
+        Report generated: 11 Feb 2026 
+        Utility: Cacti (data center)
+        Data capture time range: 2025-02-12 - 2026-02-11
+
+        | Category | Server   | CPU | RAM | Storage | Traffic (inbound) | Traffic (outbound) |
+        | -------- | -------- | --- | --- | ------- | ----------------- | ------------------ |
+        | KVM (Prod)     | Dell42   | 42.59 (avg) / 82.1 (max) | 92.19 (avg) / 114.5 (max) | 3.38 (avg) \ 3.78 (max) | 2.38M / 225.34M | 2.48M / 209.04M
+        | KVM (Prod)       | Dell43   | 
+        | KVM (Prod)       | Dell47   |
+        | KVM (Prod)       | Dell50   |
+        | KVM (Prod)       | Dell51   |
+        | KVM (UAT)       | Dell40   |
+        | KVM (UAT)       | Dell41   |
+        | KVM (UAT)       | Dell46   |
+
+
+
+
       - **Existing Server Utilization for HCI Pilot**<br>
         Assessment of available capacity on 10 Dell R610/R650 servers for Phase 1 testing.
       - **New Server Procurement Forecast**<br>
