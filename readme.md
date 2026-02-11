@@ -7,7 +7,7 @@ Project Owner: Bronson So<br>
 <br>
 
 ## Table of Content
-### Background and Objectives
+### Background and Objectives ✅
 ### Considerations    
 ### Scope
 1. Included
@@ -18,7 +18,7 @@ Project Owner: Bronson So<br>
 2. Resources acquired
 3. New project growth rate
 4. Special policies / rules
-### Implementation Plan
+### Implementation Plan ✅
 1. Overview
 2. Phases
 ### Appendix
@@ -63,7 +63,7 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
 <br>
 
 ## Considerations
-   1. Technology Stack<br>
+   1. Technology Stack ✅<br> 
       Key architectural and platform decisions that will shape the solution’s design, scalability, and lifecycle management.
       - **Bare metal vs Virtualized Infrastructure**<br>
         Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes.<br>
