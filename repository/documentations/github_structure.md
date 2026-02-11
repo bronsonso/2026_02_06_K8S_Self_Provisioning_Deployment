@@ -1,6 +1,6 @@
 ## File Structure
 Convention: snake_case<br>
-Singular form<br>
+Singular / Plural: Singular<br>
 Use for: Files, directories, configuration files, data files, scripts<br>
 
 Examples:
