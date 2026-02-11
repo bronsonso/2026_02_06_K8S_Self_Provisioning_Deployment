@@ -34,39 +34,39 @@ Project Owner: Bronson So<br>
 | Security Compliance | Partial | Full ISO 27001 | Audit reports |
   </details>
 
-### 2. Project Scope & Objectives
+## 2. Project Scope & Objectives
 TBC
 
-### 3. Current Environment Analysis
+## 3. Current Environment Analysis
 TBC
 
-### 4. Technical Considerations    
+## 4. Technical Considerations    
 
-### 5. Implementation Plan ✅
+## 5. Implementation Plan ✅
 1. Overview ✅
 2. Phases ✅
 
-### 6. Stakeholder Management
+## 6. Stakeholder Management
 TBC
 
-### 7. Governance & Operations
+## 7. Governance & Operations
 7.1 Security & Compliance Framework
 7.2 Backup & Disaster Recovery
 7.3 Monitoring & Alerting Strategy
 7.4 Cost Management & Optimization
 7.5 Support & Maintenance Model
 
-### 8. Risk Management
+## 8. Risk Management
 8.1 Risk Identification Register
 8.2 Mitigation Strategies
 8.3 Contingency Plans
 8.4 Issue Escalation Procedures
 
-### 9. Resource Management
+## 9. Resource Management
 9.1 Resource Allocation Plan
 9.2 Budget and Cost Analysis
 
-### Appendices
+## Appendices
 <ol type="A">
   <li><strong>Technical Documentation</strong>
     <ol type="i">
