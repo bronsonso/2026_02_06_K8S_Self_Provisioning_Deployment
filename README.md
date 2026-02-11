@@ -6,29 +6,130 @@ Project Owner: Bronson So<br>
 
 <br>
 
-## Background and Objectives
-```
-✅ CURRENT:
-- 700 VMs on KVM/OpenVZ
-- Mix of containerizable and legacy VMs
-- Moving toward HCI
-- Need developer self-service
+### Background and Objectives
+### Considerations    
+### Scope
+    1. Included:
+    2. Excluded:
+### Stakeholder Management
+### Current Environment Analysis
+    1. Applications on Openvz and KVM
+    2. Resources acquired
+    3. New project growth rate
+    4. Special policies / rules
+### Implementation Plan
+    1. Overview
+    2. Phases
+### Appendix
+    1. Suggested github directory structure 
+    2. K8S Pipeline Decision Matrix
+    3. Workflow Overview
+    4. Network Diagram
 
-✅ GOALS:
-- Modernize infrastructure
-- Kubernetes for new apps
-- VM support for legacy
-- Self-service platform
-- HCI integration
-```
+
+
+## Background and Objectives
+    ### 1. Overview
+    Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
+
+    Goal: Replace ~700 legacy VM and container workloads with a modern, on-premises Kubernetes platform that enables self-provisioning for development teams while lowering operational costs.
+
+    Approach:
+    - Build a scalable Kubernetes foundation on cost-efficient Hyper-Converged Infrastructure (HCI).
+    - Validate the solution using 5 existing Dell servers, then scale to full production.
+
+    Key Outcomes:
+    - Lower Costs via infrastructure consolidation and higher resource efficiency.
+    - Faster Delivery through self-service provisioning and automated resource management.
+    - Reduced Risk with a phased, pilot-tested migration strategy.
+
+    2. Summary
+    ```
+    ✅ CURRENT:
+    - 700 VMs on KVM/OpenVZ
+    - Mix of containerizable and legacy VMs
+    - Moving toward HCI
+    - Need developer self-service
+
+    ✅ GOALS:
+    - Modernize infrastructure
+    - Kubernetes for new apps
+    - VM support for legacy
+    - Self-service platform
+    - HCI integration
+    ```
+
 <br>
 
 ## Considerations
- - Bare metal vs VM [Link](./Repository/Documentations/k8s_bare_metal_vm_decision_matrix.md)
- - HCI integration [Link](./Repository/Documentations/hci_infrastructure_framework_decision_matrix.md)
- - Single vs multi cluster implementation [Link](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
- - K8S Infrastructure Decision Matrix [Link](./Repository/Documentations/k8s_infrastructure_framework_decision_matrix.md)
- - Components EOSL [Link](./Repository/Documentations/eosl.md)
+   1. Technology Stack
+      Key architectural and platform decisions that will shape the solution’s design, scalability, and lifecycle management.
+      - Bare metal vs Virtualized Infrastructure
+        Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes.
+        [References](./Repository/Documentations/k8s_bare_metal_vm_decision_matrix.md)
+      - HCI integration Strategy
+        Compare the performance of K8S on HCI and selection of Hyper-Converged Infrastructure platform (e.g., Harvester) for integrated compute, storage, and networking.
+        [References](./Repository/Documentations/hci_infrastructure_framework_decision_matrix.md)
+      - Cluster Topology
+        Single vs. multi-cluster design based on isolation, security, and operational requirements.
+        [References](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
+      - Kubernetes Infrastructure Framework
+        Choice of Kubernetes distribution, networking (CNI), storage (CSI), and ingress, etc...
+        [References](./Repository/Documentations/k8s_infrastructure_framework_decision_matrix.md)
+      - Component End-of-Life/Support (EOSL)
+        Ensure all selected software and hardware components are within supported lifecycles.
+        [References](./Repository/Documentations/eosl.md)
+
+   2. Resources estimation
+      Detailed analysis of current usage and projected requirements to ensure adequate capacity and cost-effective scaling.
+      - Baseline Metrics from Legacy Environment
+        Aggregate RAM, CPU, storage, and network bandwidth usage from existing KVM VMs and OpenVZ containers.
+      - Existing Server Utilization for HCI Pilot
+        Assessment of available capacity on 10 Dell R610/R650 servers for Phase 1 testing.
+      - New Server Procurement Forecast
+        Projected hardware requirements for scaling to 30+ servers in production.
+      - Kubernetes Overhead Calculation
+        Justification for additional resources needed for K8s control plane, worker nodes, and system overhead.
+
+
+
+   2. Business (Cost)
+      - TCO
+        - Running cost
+        - Setup cost
+      - ROI
+   3. Security
+      - Compliances 27001, CISA, NIST
+      - Hardening on components
+      - vLAN & Firewall configurations     
+   3. Schedule
+        - Phase 1: Testing - K8S, HCI
+                 - Testing of HCI
+                   - Setup Harvester on 2 hosts
+                 - Test K8S cluster management
+                   - Setup Rancher on Harvester
+                 - Setup RKE2 2 clusters (dev, prod)
+                 - test with 10% systems (one from each type: heavy usage, low usage, one from vm, one from container, one legacy system, one modern system, one web site, one database, one cms)
+        - Phase 2: Fine Tuning - K8S
+        
+        - Phase 2: Production -
+
+        - Phase 3: SASE 
+
+        - Phase 4: Addition Features
+                 - Backstage User GUI
+   4. Operations
+      - agile infrastructure
+      - application developer self provisioning
+      - RBAC
+   5. Management
+      - resoureces projection
+   6. Documentations and Versioning
+      - Implementation procedures
+      - Credentials
+      - File Structure (github, )
+      - Namespace ()
+
 <br>
 
 ## K8S Pipeline Decision Matrix
@@ -61,14 +162,6 @@ Project Owner: Bronson So<br>
 
 <br>
 
-## Considerations
-1. maintenance cost
-2. cost management
-3. utilization
-4. agile infrastructure
-5. self provisioning
-3. future resoureces provisioning
-4. RBAC
 
 <br>
 
