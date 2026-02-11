@@ -9,8 +9,8 @@ Project Owner: Bronson So<br>
 ### Background and Objectives
 ### Considerations    
 ### Scope
-    1. Included:
-    2. Excluded:
+    1. Included
+    2. Excluded
 ### Stakeholder Management
 ### Current Environment Analysis
     1. Applications on Openvz and KVM
