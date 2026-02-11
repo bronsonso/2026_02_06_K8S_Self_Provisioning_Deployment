@@ -12,7 +12,7 @@ Project Owner: Bronson So<br>
      <blockquote>This project addresses the modernization of our legacy application hosting infrastructure, which currently consists of approximately 700 systems distributed across KVM virtual machines and OpenVZ containers. The existing environment operates on disparate technologies with varying lifecycle stages, leading to operational inefficiencies, rising maintenance costs, and limited scalability. As business demands evolve, the current infrastructure cannot adequately support emerging requirements for rapid deployment, elastic scaling, and developer self-service capabilities. This initiative represents a strategic transformation to establish a unified, modern platform that aligns with industry best practices and positions the organization for future growth.</blockquote>
   </details>
   <details>
-    <Summary>1.2 Business Objectives ✅</Summary>
+    <Summary><strong>1.2 Business Objectives ✅</strong></Summary>
     <blockquote>
       - Cost Optimization: Reduce total cost of ownership by 30% through infrastructure consolidation and improved resource utilization via Hyper-Converged Infrastructure (HCI)
       - Operational Efficiency: Decrease application deployment time from days to minutes through containerization and Kubernetes orchestration
@@ -22,14 +22,16 @@ Project Owner: Bronson So<br>
     </blockquote>
   </details>
   <details>
-    <Summary>1.3 Key Success Metrics</Summary>
-    <blockquote>Metric	Baseline	Target	Measurement Method
-Infrastructure Cost/App	$X/month	30% reduction	Financial analysis
-Deployment Time	3-5 days	<2 hours	Pipeline metrics
-Resource Utilization	45% average	>70% average	Monitoring dashboards
-Platform Availability	99.5%	99.9% uptime	SLA monitoring
-Migration Completion	N/A	100% of 700 systems	Migration tracker
-Security Compliance	Partial	Full ISO 27001	Audit reports
+    <Summary><strong>1.3 Key Success Metrics</strong></Summary>
+    <blockquote>
+      | Metric | Baseline | Target | Measurement Method |
+      |--------|----------|--------|--------------------|
+      | Infrastructure Cost/App | $X/month | 30% reduction | Financial analysis |
+      | Deployment Time | 3-5 days | <2 hours | Pipeline metrics |
+      | Resource Utilization | 45% average | >70% average | Monitoring dashboards |
+      | Platform Availability | 99.5% | 99.9% uptime | SLA monitoring |
+      | Migration Completion | N/A | 100% of 700 systems | Migration tracker |
+      | Security Compliance | Partial | Full ISO 27001 | Audit reports |
     </blockquote>
   </details>
 
