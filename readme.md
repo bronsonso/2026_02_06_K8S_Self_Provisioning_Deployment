@@ -8,11 +8,11 @@ Project Owner: Bronson So<br>
 
 ## 1. Executive Summary
   <details>
-    <Summary>**1.1 Project Background**</Summary>
+    <Summary>1.1 Project Background</Summary>
      <blockquote>This project addresses the modernization of our legacy application hosting infrastructure, which currently consists of approximately 700 systems distributed across KVM virtual machines and OpenVZ containers. The existing environment operates on disparate technologies with varying lifecycle stages, leading to operational inefficiencies, rising maintenance costs, and limited scalability. As business demands evolve, the current infrastructure cannot adequately support emerging requirements for rapid deployment, elastic scaling, and developer self-service capabilities. This initiative represents a strategic transformation to establish a unified, modern platform that aligns with industry best practices and positions the organization for future growth.</blockquote>
   </details>
   <details>
-    **<Summary>1.2 Business Objectives ✅</Summary>**
+    <Summary>1.2 Business Objectives ✅</Summary>
     <blockquote>
       - Cost Optimization: Reduce total cost of ownership by 30% through infrastructure consolidation and improved resource utilization via Hyper-Converged Infrastructure (HCI)
       - Operational Efficiency: Decrease application deployment time from days to minutes through containerization and Kubernetes orchestration
@@ -33,24 +33,60 @@ Security Compliance	Partial	Full ISO 27001	Audit reports
     </blockquote>
   </details>
 
-### Technical Considerations    
-### Scope
-    TBC
-### Implementation Plan ✅
+### 2. Project Scope & Objectives
+TBC
+
+### 3. Current Environment Analysis
+TBC
+
+### 4. Technical Considerations    
+
+### 5. Implementation Plan ✅
 1. Overview ✅
 2. Phases ✅
-### Stakeholder Management
-    TBC
-### Current Environment Analysis
-1. Applications on Openvz and KVM
-2. Resources acquired
-3. New project growth rate
-4. Special policies / rules
-### Appendix
-1. Suggested github directory structure 
-2. K8S Pipeline Decision Matrix
-3. Workflow Overview
-4. Network Diagram
+
+### 6. Stakeholder Management
+TBC
+
+### 7. Governance & Operations
+7.1 Security & Compliance Framework
+7.2 Backup & Disaster Recovery
+7.3 Monitoring & Alerting Strategy
+7.4 Cost Management & Optimization
+7.5 Support & Maintenance Model
+
+### 8. Risk Management
+8.1 Risk Identification Register
+8.2 Mitigation Strategies
+8.3 Contingency Plans
+8.4 Issue Escalation Procedures
+
+### 9. Resource Management
+9.1 Resource Allocation Plan
+9.2 Budget and Cost Analysis
+
+### Appendices
+A. Technical Documentation
+A.1 GitHub Repository Structure
+A.2 Kubernetes Pipeline Decision Matrix
+A.3 Workflow & Process Diagrams
+A.4 Network Topology Diagrams
+A.5 Hardware Specifications
+B. Operational Documentation
+B.1 Deployment Procedures
+B.2 Troubleshooting Guides
+B.3 Performance Tuning Guidelines
+B.4 Security Hardening Checklists
+C. Reference Materials
+C.1 Glossary of Terms
+C.2 Acronym List
+C.3 Related Documentation Links
+C.4 Regulatory Compliance References
+D. Supporting Analysis
+D.1 Resource Utilization Reports
+D.2 Cost-Benefit Analysis
+D.3 Vendor Comparison Matrix
+D.4 Technology Evaluation Criteria
 
 <br><br>
 
