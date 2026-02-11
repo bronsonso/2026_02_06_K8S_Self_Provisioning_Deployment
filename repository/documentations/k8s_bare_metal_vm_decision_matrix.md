@@ -2,7 +2,7 @@
 
 ### Performance Characteristics
 
-| Aspect | Bare Metal K8s | VM/Hypervisor (Hyper-V/ESXi) | HCI (Harvester) |
+| Aspect | Bare Metal K8s | VM/Hypervisor (Hyper-V/ESXi) | VM (Harvester) |
 | :--- | :--- | :--- | :--- |
 | **CPU Performance** | ⭐⭐⭐⭐⭐ (Native 100%) | ⭐⭐⭐⭐ (85-95% efficiency) | ⭐⭐⭐⭐ (80-90% efficiency) |
 | **Memory Performance** | ⭐⭐⭐⭐⭐ (Direct access) | ⭐⭐⭐⭐ (90-95% efficiency) | ⭐⭐⭐⭐ (85-92% efficiency) |
@@ -13,7 +13,7 @@
 
 ### Resource Efficiency & Cost
 
-| Aspect | Bare Metal K8s | VM/Hypervisor | HCI (Harvester) |
+| Aspect | Bare Metal K8s | VM/Hypervisor | VM (Harvester) |
 | :--- | :--- | :--- | :--- |
 | **Hardware Utilization** | 90-95% efficient | 70-80% efficient | 75-85% efficient |
 | **Resource Overcommit** | Not possible | ✅ CPU/Memory overcommit | Limited to K8s scheduling |
@@ -24,7 +24,7 @@
 
 ### Features & Capabilities
 
-| Feature | Bare Metal K8s | VM/Hypervisor | HCI (Harvester) |
+| Feature | Bare Metal K8s | VM/Hypervisor | VM (Harvester) |
 | :--- | :--- | :--- | :--- |
 | **Live Migration** | ❌ Not available | ✅ Hyper-V Live Migration/VMotion | ✅ KubeVirt live migration |
 | **High Availability** | K8s pod-level only | ✅ VM-level HA + K8s | ✅ K8s-native HA |
@@ -36,7 +36,7 @@
 
 ### Operational Management
 
-| Operational Aspect | Bare Metal K8s | VM/Hypervisor | HCI (Harvester) |
+| Operational Aspect | Bare Metal K8s | VM/Hypervisor | VM (Harvester) |
 | :--- | :--- | :--- | :--- |
 | **Deployment Speed** | Slow (physical setup) | Medium (VM templates) | Fast (automated provisioning) |
 | **Day 2 Operations** | Complex (manual) | Mature tools available | Integrated K8s tooling |
@@ -47,7 +47,7 @@
 
 ### Scalability & Flexibility
 
-| Scalability Factor | Bare Metal K8s | VM/Hypervisor | HCI (Harvester) |
+| Scalability Factor | Bare Metal K8s | VM/Hypervisor | VM (Harvester) |
 | :--- | :--- | :--- | :--- |
 | **Horizontal Scaling** | Limited by hardware | Flexible VM scaling | Flexible node scaling |
 | **Resource Granularity** | Physical server level | Fine-grained VM sizing | K8s resource requests |
@@ -58,7 +58,7 @@
 
 ### Security & Compliance
 
-| Security Aspect | Bare Metal K8s | VM/Hypervisor | HCI (Harvester) |
+| Security Aspect | Bare Metal K8s | VM/Hypervisor | VM (Harvester) |
 | :--- | :--- | :--- | :--- |
 | **Attack Surface** | Smaller (no hypervisor) | Larger (hypervisor layer) | Medium (K8s stack) |
 | **Isolation Level** | Container-level | ✅ VM-level + container | K8s namespace level |
@@ -73,12 +73,11 @@
 | :--- | :--- | :--- |
 | **High-performance Computing** | ✅ Bare Metal | Maximum performance, low latency |
 | **Edge/IoT Deployments** | ✅ Bare Metal | Minimal overhead, small footprint |
-| **Existing Virtualization Shop** | ✅ VM/Hypervisor | Leverage existing skills/tools |
-| **Mixed Workload Environment** | ✅ VM/Hypervisor or HCI | Run VMs and containers together |
-| **Greenfield K8s-native** | ✅ HCI (Harvester) | Modern, integrated platform |
-| **Cost-sensitive Projects** | ✅ Bare Metal | Avoid licensing costs |
+| **Existing Virtualization Shop** | ✅ VM/Hypervisor or Harvester | Leverage existing skills/tools |
+| **Mixed Workload Environment** | ✅ VM/Hypervisor or Harvester | Run VMs and containers together |
+| **Greenfield K8s-native** | ✅ Harvester | Modern, integrated platform |
+| **Cost-sensitive Projects** | ✅ Bare Metal or Harvester | Avoid licensing costs |
 | **Enterprise Data Centers** | ✅ VM/Hypervisor | Mature backup/DR/HA features |
-| **Developer Self-Service** | ✅ HCI (Harvester) | Integrated VM + container platform |
 
 ### Pros & Cons Summary
 
@@ -137,7 +136,7 @@
 
 
 ### Resource Projection
-| Resource Type | Bare Metal K8s | VM/Hypervisor (ESXi) | HCI (Harvester) | Notes |
+| Resource Type | Bare Metal K8s | VM/Hypervisor (ESXi) | VM (Harvester) | Notes |
 | :--- | :--- | :--- | :--- | :--- |
 | **Total System Overhead** | 5-10% | 20-30% | 15-25% | Base overhead before K8s |
 | **CPU Overhead** | 2-5% | 5-15% | 8-12% | Hypervisor + management services |
@@ -148,12 +147,12 @@
 
 ### Decision Matrix
 
-| Decision Factor | Choose Bare Metal When... | Choose VM/Hypervisor When... | Choose HCI When... |
+| Decision Factor | Choose Bare Metal When... | Choose VM/Hypervisor When... | Choose Harvester When... |
 | :--- | :--- | :--- | :--- |
 | **Performance** | Critical (HPC, AI/ML, DB) | Acceptable with overhead | Good enough for most apps |
 | **Budget** | Minimize licensing costs | Have virtualization budget | Want modern platform without licenses |
 | **Workloads** | Pure containers only | Mixed VMs + containers | K8s-native with some VMs |
-| **Existing Skills** | Strong K8s + hardware team | Strong virtualization team | Strong K8s team |
+| **Existing Skills** | Strong K8s + hardware team | Strong virtualization team | Mixed K8s + virtualization team |
 | **High Availability** | K8s-native HA sufficient | Need VM-level HA | K8s-native HA sufficient |
 | **Backup/DR** | Can manage app-level | Need enterprise backup | Building modern DR solution |
 | **Time to Market** | Can accept longer setup | Need to leverage existing infra | Want integrated solution |
@@ -169,15 +168,15 @@
 | **VM/Hypervisor** | 133 vCPU, 235GB RAM, 3TB storage | $$$ (hardware + licenses) |
 | **HCI** | 125 vCPU, 227GB RAM, 4TB storage | $$ (more hardware, no licenses) |
 
-*Note: Assumes 10% overhead for BM, 25% for VM, 20% for HCI, plus storage replication.*
+*Note: Assumes 10% overhead for BM, 25% for VM, 20% for Harvester, plus storage replication.*
 
 ---
 
 **Recommendation:** Choose based on your primary constraints:
 - **Performance/cost:** Bare Metal
 - **Operational maturity:** VM/Hypervisor  
-- **Modern K8s-native:** HCI (Harvester)
-- **Mixed environment:** VM/Hypervisor or HCI
+- **Modern K8s-native:** Harvester
+- **Mixed environment:** VM/Hypervisor or Harvester
 - **Edge/low-overhead:** Bare Metal
 
 

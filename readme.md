@@ -110,7 +110,46 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
         Apply security baselines to Kubernetes nodes, container images, and orchestration tools.
       - **Network Segmentation & Access Controls**
         Define vLAN schemas, firewall rules, and zero-trust network policies.
-   5. Schedule & Phasing<br>
+   5. Operations & Management<br>
+      Processes and tooling to ensure sustainable, agile platform operations.
+      - **Agile Infrastructure Practices**<br>
+        Infrastructure-as-Code (IaC), GitOps workflows, and CI/CD for platform management.
+      - **Self-Service Developer Enablement**<br>
+        Provide RBAC-governed, API-driven provisioning for application teams.
+      - **Workflow and Processes**<br>
+        Describe workflow and processes
+      - **Resource Projection & Capacity Planning**<br>
+        Ongoing monitoring, forecasting, and scaling of resources based on usage trends.
+   6. Documentation & Governance<br>
+      Structured knowledge management and version control for long-term maintainability.
+      - **Implementation Procedures**<br>
+        Detailed runbooks for deployment, upgrades, and disaster recovery.
+      - **Credentials & Secrets Management**<br>
+        Secure storage and rotation of access keys, certificates, and passwords.
+      - **Repository Structure (GitHub/GitLab)**<br>
+        Organized version control for IaC, manifests, documentation, and policies.
+      - **Namespace Design & Governance**<br>
+        Logical grouping strategy for tenants, applications, and environments within Kubernetes.
+
+<br>
+
+## Scope
+
+<br>
+
+## Stakeholder Management
+
+<br>
+
+## Current Environment Analysis
+
+<br>
+
+## Implmentation Plan
+
+   1. We're implementing a production-ready infrastructure platform that leverages Harvester HCI to create a unified virtualization and container environment on 5 Dell R610 servers. The solution provides both VM and Kubernetes capabilities through a single management interface, with Rancher for multi-cluster orchestration and RKE2 for enterprise-grade Kubernetes. Legacy systems will migrate to Harvester VMs, while modern applications will deploy to RKE2 clusters, following an 80% container, 20% VM adoption strategy. The platform includes built-in security compliance, vm scaling, Infrastructure-as-Code support, and GitOps pipelines to enable developer self-service while maintaining operational control.
+   
+   2. Schedule & Phasing<br>
       Time-bound roadmap with clear milestones, deliverables, and risk-mitigation checkpoints.
       - **Phase 1: Proof of Concept & Testing**<br>
         - Deploy Harvester HCI on 2 hosts.<br>
@@ -126,37 +165,10 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
       - **Phase 4: Advanced Capabilities & SASE Integration**<br>
         - Implement Secure Access Service Edge (SASE) for secure multi-site connectivity.
         - Deploy developer portal (Backstage) for self-service provisioning.   
-   6. Operations & Management<br>
-      Processes and tooling to ensure sustainable, agile platform operations.
-      - **Agile Infrastructure Practices**<br>
-        Infrastructure-as-Code (IaC), GitOps workflows, and CI/CD for platform management.
-      - **Self-Service Developer Enablement**<br>
-        Provide RBAC-governed, API-driven provisioning for application teams.
-      - **Workflow and Processes**<br>
-        Describe workflow and processes
-      - **Resource Projection & Capacity Planning**<br>
-        Ongoing monitoring, forecasting, and scaling of resources based on usage trends.
-   7. Documentation & Governance<br>
-      Structured knowledge management and version control for long-term maintainability.
-      - **Implementation Procedures**<br>
-        Detailed runbooks for deployment, upgrades, and disaster recovery.
-      - **Credentials & Secrets Management**<br>
-        Secure storage and rotation of access keys, certificates, and passwords.
-      - **Repository Structure (GitHub/GitLab)**<br>
-        Organized version control for IaC, manifests, documentation, and policies.
-      - **Namespace Design & Governance**<br>
-        Logical grouping strategy for tenants, applications, and environments within Kubernetes.
-
-<br>
 
 
-<br>
 
 
-<br>
-
-
-<br>
 
 ## Suggested github directory structure 
  - Github Structure [Link](./Repository/Documentations/github_structure.md)
