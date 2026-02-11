@@ -70,7 +70,7 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
         [References](./repository/documentations/k8s_bare_metal_vm_decision_matrix.md)
       - **HCI integration Strategy**<br>
         Compare the performance of K8S on HCI and selection of Hyper-Converged Infrastructure platform (e.g., Harvester) for integrated compute, storage, and networking.<br>
-        [References](./Repository/documentations/hci_infrastructure_framework_decision_matrix.md)
+        [References](./repository/documentations/hci_infrastructure_framework_decision_matrix.md)
       - **CI/CD Pipeline Architecture**<br>
         Selection of pipeline tools (Jenkins, GitLab CI, GitHub Actions, Argo CD) and strategy (GitOps vs traditional CI/CD)<br>
         [References](./repository/documentations/k8s_pipeline_decision_matrix.md)
