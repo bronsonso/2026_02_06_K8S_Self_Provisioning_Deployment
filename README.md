@@ -30,34 +30,34 @@ Project Owner: Bronson So<br>
 
 ## Background and Objectives
 ### 1. Overview
-&nbsp;&nbsp;&nbsp;&nbsp;Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
+Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
 
-&nbsp;&nbsp;&nbsp;&nbsp;Goal: Replace ~700 legacy VM and container workloads with a modern, on-premises Kubernetes platform that enables self-provisioning for development teams while lowering operational costs.
+**Goal**: Replace ~700 legacy VM and container workloads with a modern, on-premises Kubernetes platform that enables self-provisioning for development teams while lowering operational costs.
 
-Approach:
+**Approach**:
 - Build a scalable Kubernetes foundation on cost-efficient Hyper-Converged Infrastructure (HCI).
 - Validate the solution using 5 existing Dell servers, then scale to full production.
 
-Key Outcomes:
+**Key Outcomes**:
 - Lower Costs via infrastructure consolidation and higher resource efficiency.
 - Faster Delivery through self-service provisioning and automated resource management.
 - Reduced Risk with a phased, pilot-tested migration strategy.
 
-    2. Summary
-    ```
-    ✅ CURRENT:
-    - 700 VMs on KVM/OpenVZ
-    - Mix of containerizable and legacy VMs
-    - Moving toward HCI
-    - Need developer self-service
+### 2. Summary
+```
+✅ CURRENT:
+- 700 VMs on KVM/OpenVZ
+- Mix of containerizable and legacy VMs
+- Moving toward HCI
+- Need developer self-service
 
-    ✅ GOALS:
-    - Modernize infrastructure
-    - Kubernetes for new apps
-    - VM support for legacy
-    - Self-service platform
-    - HCI integration
-    ```
+✅ GOALS:
+- Modernize infrastructure
+- Kubernetes for new apps
+- VM support for legacy
+- Self-service platform
+- HCI integration
+```
 
 <br>
 
