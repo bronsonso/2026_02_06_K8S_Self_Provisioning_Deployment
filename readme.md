@@ -73,7 +73,7 @@ TBC
       <li>GitHub Repository Structure</li>
       <li>Kubernetes Pipeline Decision Matrix</li>
       <li>Workflow & Process Diagrams</li>
-      <li>Network Topology Diagrams ![Github Logo](./network/k8s_infra_v2.svg)</li>
+      <li>Network Topology Diagrams </li>![Github Logo](./network/k8s_infra_v2.svg)
       <li>Hardware Specifications</li>
     </ol>
   </li>
