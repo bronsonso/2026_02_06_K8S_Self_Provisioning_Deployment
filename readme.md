@@ -14,8 +14,29 @@ Project Owner: Bronson So<br>
    - This project addresses the modernization of our legacy application hosting infrastructure, which currently consists of approximately 700 systems distributed across KVM virtual machines and OpenVZ containers. The existing environment operates on disparate technologies with varying lifecycle stages, leading to operational inefficiencies, rising maintenance costs, and limited scalability. As business demands evolve, the current infrastructure cannot adequately support emerging requirements for rapid deployment, elastic scaling, and developer self-service capabilities. This initiative represents a strategic transformation to establish a unified, modern platform that aligns with industry best practices and positions the organization for future growth.
 </details>
 
-    2. Business Objectives ✅
-    3. Key Success Metrics
+<details>
+<Summary>2. Business Objectives ✅</Summary>
+- Cost Optimization: Reduce total cost of ownership by 30% through infrastructure consolidation and improved resource utilization via Hyper-Converged Infrastructure (HCI)
+
+- Operational Efficiency: Decrease application deployment time from days to minutes through containerization and Kubernetes orchestration
+
+- Scalability & Agility: Establish a platform capable of supporting 200% growth over the next three years with automated scaling capabilities
+
+- Security & Compliance: Achieve ISO 27001 compliance for the new platform while implementing Zero Trust security principles
+
+- Developer Productivity: Enable self-service provisioning through GitOps workflows, reducing infrastructure dependencies by 70%
+</details>
+<details>
+<Summary>3. Key Success Metrics</Summary>
+Metric	Baseline	Target	Measurement Method
+Infrastructure Cost/App	$X/month	30% reduction	Financial analysis
+Deployment Time	3-5 days	<2 hours	Pipeline metrics
+Resource Utilization	45% average	>70% average	Monitoring dashboards
+Platform Availability	99.5%	99.9% uptime	SLA monitoring
+Migration Completion	N/A	100% of 700 systems	Migration tracker
+Security Compliance	Partial	Full ISO 27001	Audit reports
+
+</details>
 
 ### Technical Considerations    
 ### Scope
