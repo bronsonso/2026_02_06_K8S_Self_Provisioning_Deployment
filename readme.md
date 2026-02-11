@@ -1,77 +1,234 @@
-## General Information
-Project Name: K8S Self Provisioning Deployment<br>
-Version: 1.0<br>
-Date: 2026-01-21<br>
-Project Owner: Bronson So<br>
+# Kubernetes Self-Service Platform Project Plan
 
-<br>
+## 📋 General Information
+- **Project Name**: K8S Self-Provisioning Platform
+- **Version**: 1.0
+- **Date**: 2026-01-21
+- **Project Owner**: Bronson So
+- **Status**: Planning Phase
+
+---
 
 ## 1. Executive Summary
-  <details>
-    <Summary><strong>1.1 Project Background</strong></Summary>
-     <blockquote>This project addresses the modernization of our legacy application hosting infrastructure, which currently consists of approximately 700 systems distributed across KVM virtual machines and OpenVZ containers. The existing environment operates on disparate technologies with varying lifecycle stages, leading to operational inefficiencies, rising maintenance costs, and limited scalability. As business demands evolve, the current infrastructure cannot adequately support emerging requirements for rapid deployment, elastic scaling, and developer self-service capabilities. This initiative represents a strategic transformation to establish a unified, modern platform that aligns with industry best practices and positions the organization for future growth.</blockquote>
-  </details>
-  <details>
-    <Summary><strong>1.2 Business Objectives ✅</strong></Summary>
-    <blockquote>
-      - Cost Optimization: Reduce total cost of ownership by 30% through infrastructure consolidation and improved resource utilization via Hyper-Converged Infrastructure (HCI)<br>
-      - Operational Efficiency: Decrease application deployment time from days to minutes through containerization and Kubernetes orchestration<br>
-      - Scalability & Agility: Establish a platform capable of supporting 200% growth over the next three years with automated scaling capabilities<br>
-      - Security & Compliance: Achieve ISO 27001 compliance for the new platform while implementing Zero Trust security principles<br>
-      - Developer Productivity: Enable self-service provisioning through GitOps workflows, reducing infrastructure dependencies by 70%<br>
-    </blockquote>
-  </details>
-  <details>
-    <Summary><strong>1.3 Key Success Metrics</strong></Summary>
+
+<details>
+<summary><strong>1.1 Project Background</strong></summary>
+
+> This project addresses the modernization of our legacy application hosting infrastructure, which currently consists of approximately 700 systems distributed across KVM virtual machines and OpenVZ containers. The existing environment operates on disparate technologies with varying lifecycle stages, leading to operational inefficiencies, rising maintenance costs, and limited scalability. As business demands evolve, the current infrastructure cannot adequately support emerging requirements for rapid deployment, elastic scaling, and developer self-service capabilities. This initiative represents a strategic transformation to establish a unified, modern platform that aligns with industry best practices and positions the organization for future growth.
+
+</details>
+
+<details>
+<summary><strong>1.2 Business Objectives ✅</strong></summary>
+
+> - **Cost Optimization**: Reduce total cost of ownership by 30% through infrastructure consolidation and improved resource utilization via Hyper-Converged Infrastructure (HCI)
+> - **Operational Efficiency**: Decrease application deployment time from days to minutes through containerization and Kubernetes orchestration
+> - **Scalability & Agility**: Establish a platform capable of supporting 200% growth over the next three years with automated scaling capabilities
+> - **Security & Compliance**: Achieve ISO 27001 compliance for the new platform while implementing Zero Trust security principles
+> - **Developer Productivity**: Enable self-service provisioning through GitOps workflows, reducing infrastructure dependencies by 70%
+
+</details>
+
+<details>
+<summary><strong>1.3 Key Success Metrics</strong></summary>
 
 | Metric | Baseline | Target | Measurement Method |
 |--------|----------|--------|--------------------|
-| Infrastructure Cost/App | $X/month | 30% reduction | Financial analysis |
-| Deployment Time | 3-5 days | <2 hours | Pipeline metrics |
-| Resource Utilization | 45% average | >70% average | Monitoring dashboards |
-| Platform Availability | 99.5% | 99.9% uptime | SLA monitoring |
-| Migration Completion | N/A | 100% of 700 systems | Migration tracker |
-| Security Compliance | Partial | Full ISO 27001 | Audit reports |
-  </details>
+| **Infrastructure Cost/App** | $X/month | 30% reduction | Financial analysis |
+| **Deployment Time** | 3-5 days | <2 hours | Pipeline metrics |
+| **Resource Utilization** | 45% average | >70% average | Monitoring dashboards |
+| **Platform Availability** | 99.5% | 99.9% uptime | SLA monitoring |
+| **Migration Completion** | N/A | 100% of 700 systems | Migration tracker |
+| **Security Compliance** | Partial | Full ISO 27001 | Audit reports |
+
+</details>
+
+---
 
 ## 2. Project Scope & Objectives
-TBC
+*To be completed*
+
+---
 
 ## 3. Current Environment Analysis
-TBC
+*To be completed*
 
-## 4. Technical Considerations    
+---
+
+## 4. Technical Considerations
+
+<details>
+<summary><strong>4.1 Technology Stack ✅</strong></summary>
+
+Key architectural and platform decisions that will shape the solution's design, scalability, and lifecycle management.
+
+| Consideration | Description | Reference |
+|---------------|-------------|-----------|
+| **Bare metal vs Virtualized Infrastructure** | Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes | [Decision Matrix](./repository/documentations/k8s_bare_metal_vm_decision_matrix.md) |
+| **HCI Integration Strategy** | Compare performance of K8S on HCI and selection of Hyper-Converged Infrastructure platform (e.g., Harvester) | [Decision Matrix](./repository/documentations/hci_infrastructure_framework_decision_matrix.md) |
+| **Cluster Topology** | Single vs. multi-cluster design based on isolation, security, and operational requirements | [Decision Matrix](./repository/documentations/k8s_single_multi_cluster_decision_matrix.md) |
+| **Kubernetes Infrastructure Framework** | Choice of K8s distribution, networking (CNI), storage (CSI), and ingress | [Decision Matrix](./repository/documentations/k8s_infrastructure_framework_decision_matrix.md) |
+| **Component End-of-Life/Support (EOSL)** | Ensure all selected components are within supported lifecycles | [EOSL Tracking](./repository/documentations/eosl.md) |
+
+</details>
+
+<details>
+<summary><strong>4.2 Resource Estimation</strong></summary>
+
+Detailed analysis of current usage and projected requirements to ensure adequate capacity and cost-effective scaling.
+
+### 📊 Baseline Metrics from Legacy Environment
+Aggregate RAM, CPU, storage, and network bandwidth usage from existing KVM VMs and OpenVZ containers.
+
+- **Report generated**: 11 Feb 2026
+- **Utility**: Cacti (data center)
+- **Data capture time range**: 2025-02-12 - 2026-02-11
+
+| Category | Server | CPU (avg/max) | RAM (avg/max) | Storage (avg/max) | Traffic Inbound | Traffic Outbound |
+|----------|--------|---------------|---------------|-------------------|-----------------|------------------|
+| KVM (Prod) | Dell42 | 42.59% / 82.1% | 92.19% / 114.5% | 3.38TB / 3.78TB | 2.38M / 225.34M | 2.48M / 209.04M |
+| KVM (Prod) | Dell43 | *Data pending* | *Data pending* | *Data pending* | *Data pending* | *Data pending* |
+| KVM (Prod) | Dell47 | *Data pending* | *Data pending* | *Data pending* | *Data pending* | *Data pending* |
+| KVM (Prod) | Dell50 | *Data pending* | *Data pending* | *Data pending* | *Data pending* | *Data pending* |
+| KVM (Prod) | Dell51 | *Data pending* | *Data pending* | *Data pending* | *Data pending* | *Data pending* |
+| KVM (UAT) | Dell40 | *Data pending* | *Data pending* | *Data pending* | *Data pending* | *Data pending* |
+| KVM (UAT) | Dell41 | *Data pending* | *Data pending* | *Data pending* | *Data pending* | *Data pending* |
+| KVM (UAT) | Dell46 | *Data pending* | *Data pending* | *Data pending* | *Data pending* | *Data pending* |
+
+### 🔧 Additional Considerations
+- **Existing Server Utilization for HCI Pilot**: Assessment of available capacity on 10 Dell R610/R650 servers for Phase 1 testing
+- **New Server Procurement Forecast**: Projected hardware requirements for scaling to 30+ servers in production
+- **Kubernetes Overhead Calculation**: Justification for additional resources needed for K8s control plane, worker nodes, and system overhead
+
+</details>
+
+<details>
+<summary><strong>4.3 Business (Cost) Analysis</strong></summary>
+
+Financial modeling to justify investment and forecast long-term operational impact.
+
+### 💰 Total Cost of Ownership (TCO)
+| Category | Components |
+|----------|------------|
+| **Setup Costs** | Hardware, software licenses, professional services, training |
+| **Running Costs** | Power, cooling, maintenance, support subscriptions |
+
+### 📈 Return on Investment (ROI)
+Quantify savings from:
+- Infrastructure consolidation
+- Improved operational efficiency
+- Reduced operational overhead
+- Increased developer productivity
+
+</details>
+
+<details>
+<summary><strong>4.4 Security & Compliance</strong></summary>
+
+Ensuring the platform meets organizational and regulatory security standards.
+
+| Area | Considerations |
+|------|----------------|
+| **Compliance Frameworks** | ISO 27001, CISA guidelines, NIST cybersecurity framework |
+| **Component Hardening** | Security baselines for K8s nodes, container images, orchestration tools |
+| **Network Segmentation & Access Controls** | vLAN schemas, firewall rules, zero-trust network policies |
+
+</details>
+
+<details>
+<summary><strong>4.5 Operations & Management</strong></summary>
+
+Processes and tooling to ensure sustainable, agile platform operations.
+
+| Practice | Description |
+|----------|-------------|
+| **Agile Infrastructure Practices** | Infrastructure-as-Code (IaC), GitOps workflows, CI/CD for platform management |
+| **Self-Service Developer Enablement** | RBAC-governed, API-driven provisioning for application teams |
+| **Workflow and Processes** | Automated deployment, scaling, and management workflows |
+| **Resource Projection & Capacity Planning** | Ongoing monitoring, forecasting, and scaling based on usage trends |
+
+</details>
+
+<details>
+<summary><strong>4.6 Documentation & Governance</strong></summary>
+
+Structured knowledge management and version control for long-term maintainability.
+
+| Component | Purpose |
+|-----------|---------|
+| **Implementation Procedures** | Runbooks for deployment, upgrades, and disaster recovery |
+| **Credentials & Secrets Management** | Secure storage and rotation of access keys, certificates, passwords |
+| **Repository Structure** | Organized version control for IaC, manifests, documentation, policies |
+| **Namespace Design & Governance** | Logical grouping for tenants, applications, and environments within K8s |
+
+</details>
+
+---
 
 ## 5. Implementation Plan ✅
-1. Overview ✅
-2. Phases ✅
+
+<details>
+<summary><strong>5.1 Overview ✅</strong></summary>
+
+We're implementing a production-ready infrastructure platform that leverages Harvester HCI to create a unified virtualization and container environment on 5 Dell R610 servers. The solution provides both VM and Kubernetes capabilities through a single management interface, with Rancher for multi-cluster orchestration and RKE2 for enterprise-grade Kubernetes.
+
+**Adoption Strategy**: 80% container, 20% VM
+- Legacy systems → Harvester VMs
+- Modern applications → RKE2 clusters
+
+**Key Features**:
+- Built-in security compliance
+- VM and container scaling
+- Infrastructure-as-Code support
+- GitOps pipelines
+- Developer self-service capabilities
+
+</details>
+
+<details>
+<summary><strong>5.2 Phases ✅</strong></summary>
+
+[View detailed schedule and phasing](./repository/documentations/implementation_plan/schedule_and_phasing.md)
+
+</details>
+
+---
 
 ## 6. Stakeholder Management
-TBC
+*To be completed*
+
+---
 
 ## 7. Governance & Operations
-7.1 Security & Compliance Framework
-7.2 Backup & Disaster Recovery
-7.3 Monitoring & Alerting Strategy
-7.4 Cost Management & Optimization
-7.5 Support & Maintenance Model
+- **7.1 Security & Compliance Framework**
+- **7.2 Backup & Disaster Recovery**
+- **7.3 Monitoring & Alerting Strategy**
+- **7.4 Cost Management & Optimization**
+- **7.5 Support & Maintenance Model**
+
+---
 
 ## 8. Risk Management
-8.1 Risk Identification Register
-8.2 Mitigation Strategies
-8.3 Contingency Plans
-8.4 Issue Escalation Procedures
+- **8.1 Risk Identification Register**
+- **8.2 Mitigation Strategies**
+- **8.3 Contingency Plans**
+- **8.4 Issue Escalation Procedures**
+
+---
 
 ## 9. Resource Management
-9.1 Resource Allocation Plan
-9.2 Budget and Cost Analysis
+- **9.1 Resource Allocation Plan**
+- **9.2 Budget and Cost Analysis**
 
-## Appendices
+---
+
+## 📚 Appendices
+
 <ol type="A">
   <li><strong>Technical Documentation</strong>
     <ol type="i">
-      <li>GitHub Repository Structure</li>
-      <li>Kubernetes Pipeline Decision Matrix</li>
+      <li><a href="./repository/documentations/github_structure.md">GitHub Repository Structure</a></li>
+      <li><a href="./repository/documentations/k8s_pipeline_decision_matrix.md">Kubernetes Pipeline Decision Matrix</a> - Selection of pipeline tools (Jenkins, GitLab CI, GitHub Actions, Argo CD) and strategy (GitOps vs traditional CI/CD)</li>
       <li>Workflow & Process Diagrams</li>
       <li><a href="./network/k8s_infra_v2.svg" target="_blank">Network Topology Diagrams</a></li>
       <li>Hardware Specifications</li>
@@ -105,172 +262,86 @@ TBC
     </ol>
   </li>
 </ol>
-<br><br>
 
-## Background and Objectives
-### 1. Overview
-Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
+---
 
-**Goal**: Replace ~700 legacy VM and container workloads with a modern, on-premises Kubernetes platform that enables self-provisioning for development teams while lowering operational costs.
+## 🎯 To Be Completed Sections
 
-**Approach**:
-- Build a scalable Kubernetes foundation on cost-efficient Hyper-Converged Infrastructure (HCI).
-- Validate the solution using 5 existing Dell servers, then scale to full production.
+### Scope
+*Content pending*
 
-**Key Outcomes**:
-- Lower Costs via infrastructure consolidation and higher resource efficiency.
-- Faster Delivery through self-service provisioning and automated resource management.
-- Reduced Risk with a phased, pilot-tested migration strategy.
+### Stakeholder Management
+*Content pending*
 
-### 2. Summary
-```
-✅ CURRENT:
-- 700 VMs on KVM/OpenVZ
-- Mix of containerizable and legacy VMs
-- Moving toward HCI
-- Need developer self-service
+### Current Environment Analysis
+*Content pending*
 
-✅ GOALS:
-- Modernize infrastructure
-- Kubernetes for new apps
-- VM support for legacy
-- Self-service platform
-- HCI integration
-```
+---
 
+## 🏗️ Architecture Components
 
+### Suggested GitHub Directory Structure
+[GitHub Structure Documentation](./repository/documentations/github_structure.md)
 
-<br>
+### Suggested Namespace Design
+*Content pending*
 
-## Considerations
-   1. Technology Stack ✅<br> 
-      Key architectural and platform decisions that will shape the solution’s design, scalability, and lifecycle management.
-      - **Bare metal vs Virtualized Infrastructure**<br>
-        Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes.<br>
-        [References](./repository/documentations/k8s_bare_metal_vm_decision_matrix.md)
-      - **HCI integration Strategy**<br>
-        Compare the performance of K8S on HCI and selection of Hyper-Converged Infrastructure platform (e.g., Harvester) for integrated compute, storage, and networking.<br>
-        [References](./repository/documentations/hci_infrastructure_framework_decision_matrix.md)
-      - **CI/CD Pipeline Architecture**<br>
-        Selection of pipeline tools (Jenkins, GitLab CI, GitHub Actions, Argo CD) and strategy (GitOps vs traditional CI/CD)<br>
-        [References](./repository/documentations/k8s_pipeline_decision_matrix.md)
-      - **Cluster Topology**<br>
-        Single vs. multi-cluster design based on isolation, security, and operational requirements.<br>
-        [References](./repository/documentations/k8s_single_multi_cluster_decision_matrix.md)
-      - **Kubernetes Infrastructure Framework**<br>
-        Choice of Kubernetes distribution, networking (CNI), storage (CSI), and ingress, etc...<br>
-        [References](./repository/documentations/k8s_infrastructure_framework_decision_matrix.md)
-      - **Component End-of-Life/Support (EOSL)**<br>
-        Ensure all selected software and hardware components are within supported lifecycles.<br>
-        [References](./repository/documentations/eosl.md)
+### Network Diagram
+[Network Topology](./network/k8s_infra_v2.svg)
 
-   2. Resources estimation<br>
-      Detailed analysis of current usage and projected requirements to ensure adequate capacity and cost-effective scaling.
-      - **Baseline Metrics from Legacy Environment**<br>
-        Aggregate RAM, CPU, storage, and network bandwidth usage from existing KVM VMs and OpenVZ containers.
+### Cluster Map
+*Content pending*
 
-        Report generated: 11 Feb 2026 
-        Utility: Cacti (data center)
-        Data capture time range: 2025-02-12 - 2026-02-11
+---
 
-        | Category | Server   | CPU | RAM | Storage | Traffic (inbound) | Traffic (outbound) |
-        | -------- | -------- | --- | --- | ------- | ----------------- | ------------------ |
-        | KVM (Prod)     | Dell42   | 42.59 (avg) / 82.1 (max) | 92.19 (avg) / 114.5 (max) | 3.38 (avg) \ 3.78 (max) | 2.38M / 225.34M | 2.48M / 209.04M
-        | KVM (Prod)       | Dell43   | 
-        | KVM (Prod)       | Dell47   |
-        | KVM (Prod)       | Dell50   |
-        | KVM (Prod)       | Dell51   |
-        | KVM (UAT)       | Dell40   |
-        | KVM (UAT)       | Dell41   |
-        | KVM (UAT)       | Dell46   |
+## ❓ Frequently Asked Questions
 
+<details>
+<summary><strong>Why 3 databases for Kubernetes?</strong></summary>
 
+Kubernetes typically uses three database components for high availability and data separation:
 
+1. **etcd**: The primary distributed key-value store for Kubernetes cluster state
+2. **Container Registry Database**: For storing container image metadata
+3. **Monitoring/Logging Database**: For metrics and logs (Prometheus, Loki, etc.)
 
-      - **Existing Server Utilization for HCI Pilot**<br>
-        Assessment of available capacity on 10 Dell R610/R650 servers for Phase 1 testing.
-      - **New Server Procurement Forecast**<br>
-        Projected hardware requirements for scaling to 30+ servers in production.
-      - **Kubernetes Overhead Calculation**<br>
-        Justification for additional resources needed for K8s control plane, worker nodes, and system overhead.
+This separation ensures:
+- Isolation of concerns
+- Independent scaling
+- Different backup strategies
+- Reduced single points of failure
 
-   3. Business (Cost)<br>
-      Financial modeling to justify investment and forecast long-term operational impact.
-      - **Total Cost of Ownership (TCO)**<br>
-        - Setup Costs: Hardware, software licenses, professional services, training.
-        - Running Costs: Power, cooling, maintenance, support subscriptions.
-      - **Return on Investment (ROI)**
-        Quantify savings from infrastructure consolidation, improved efficiency, and reduced operational overhead.
-   4. Security & Compliance<br>
-      Ensuring the platform meets organizational and regulatory security standards.
-      - **Compliance Frameworks**
-        Align with ISO 27001, CISA guidelines, and NIST cybersecurity framework.
-      - **Component Hardening**
-        Apply security baselines to Kubernetes nodes, container images, and orchestration tools.
-      - **Network Segmentation & Access Controls**
-        Define vLAN schemas, firewall rules, and zero-trust network policies.
-   5. Operations & Management<br>
-      Processes and tooling to ensure sustainable, agile platform operations.
-      - **Agile Infrastructure Practices**<br>
-        Infrastructure-as-Code (IaC), GitOps workflows, and CI/CD for platform management.
-      - **Self-Service Developer Enablement**<br>
-        Provide RBAC-governed, API-driven provisioning for application teams.
-      - **Workflow and Processes**<br>
-        Describe workflow and processes
-      - **Resource Projection & Capacity Planning**<br>
-        Ongoing monitoring, forecasting, and scaling of resources based on usage trends.
-   6. Documentation & Governance<br>
-      Structured knowledge management and version control for long-term maintainability.
-      - **Implementation Procedures**<br>
-        Detailed runbooks for deployment, upgrades, and disaster recovery.
-      - **Credentials & Secrets Management**<br>
-        Secure storage and rotation of access keys, certificates, and passwords.
-      - **Repository Structure (GitHub/GitLab)**<br>
-        Organized version control for IaC, manifests, documentation, and policies.
-      - **Namespace Design & Governance**<br>
-        Logical grouping strategy for tenants, applications, and environments within Kubernetes.
+</details>
 
-<br>
+<details>
+<summary><strong>Can namespaces have inheritance in Kubernetes?</strong></summary>
 
-## Scope
+**No**, Kubernetes namespaces do not support inheritance natively. However, you can achieve similar outcomes through:
 
-<br>
+1. **Helm Chart Dependencies**: Parent charts that include child configurations
+2. **Kustomize Overlays**: Base configurations with environment-specific patches
+3. **Policy Propagation Tools**: Using tools like Kyverno or OPA Gatekeeper to propagate policies
+4. **GitOps Patterns**: Template repositories that generate namespace configurations
+5. **Operators**: Custom operators that manage namespace hierarchies
 
-## Stakeholder Management
+Best practice is to use a combination of GitOps and policy tools rather than relying on native inheritance.
 
-<br>
+</details>
 
-## Current Environment Analysis
+---
 
-<br>
+## 📊 Progress Tracking
 
-## Implmentation Plan
+| Section | Status | Last Updated | Owner |
+|---------|--------|--------------|-------|
+| Executive Summary | ✅ Complete | 2026-01-21 | Bronson So |
+| Technical Considerations | 🔄 In Progress | 2026-01-21 | Bronson So |
+| Implementation Plan | ✅ Complete | 2026-01-21 | Bronson So |
+| Appendices | ✅ Complete | 2026-01-21 | Bronson So |
+| All Other Sections | ⏳ Pending | - | - |
 
-   1. We're implementing a production-ready infrastructure platform that leverages Harvester HCI to create a unified virtualization and container environment on 5 Dell R610 servers. The solution provides both VM and Kubernetes capabilities through a single management interface, with Rancher for multi-cluster orchestration and RKE2 for enterprise-grade Kubernetes. Legacy systems will migrate to Harvester VMs, while modern applications will deploy to RKE2 clusters, following an 80% container, 20% VM adoption strategy. The platform includes built-in security compliance, vm scaling, Infrastructure-as-Code support, and GitOps pipelines to enable developer self-service while maintaining operational control.
-   
-   2. Schedule & Phasing<br>
-      [References](./repository/documentations/implementation_plan/schedule_and_phasing.md)
-      
+---
 
-
-
-
-
-## Suggested github directory structure 
- - Github Structure [Link](./repository/documentations/github_structure.md)
-<br>
-
-## Suggested namespace
-
-
-## Network Diagram
-
-
-
-
-## Cluster Map
-# Architecture:
-
-
-' why 3 database for k8s
-' can namespace has inheritance
+**Last Updated**: 2026-01-21  
+**Next Review**: 2026-02-01  
+**Document ID**: K8S-SPP-PLAN-1.0
