@@ -14,11 +14,11 @@ Project Owner: Bronson So<br>
   <details>
     <Summary><strong>1.2 Business Objectives ✅</strong></Summary>
     <blockquote>
-      - Cost Optimization: Reduce total cost of ownership by 30% through infrastructure consolidation and improved resource utilization via Hyper-Converged Infrastructure (HCI)
-      - Operational Efficiency: Decrease application deployment time from days to minutes through containerization and Kubernetes orchestration
-      - Scalability & Agility: Establish a platform capable of supporting 200% growth over the next three years with automated scaling capabilities
-      - Security & Compliance: Achieve ISO 27001 compliance for the new platform while implementing Zero Trust security principles
-      - Developer Productivity: Enable self-service provisioning through GitOps workflows, reducing infrastructure dependencies by 70%
+      - Cost Optimization: Reduce total cost of ownership by 30% through infrastructure consolidation and improved resource utilization via Hyper-Converged Infrastructure (HCI)<br>
+      - Operational Efficiency: Decrease application deployment time from days to minutes through containerization and Kubernetes orchestration<br>
+      - Scalability & Agility: Establish a platform capable of supporting 200% growth over the next three years with automated scaling capabilities<br>
+      - Security & Compliance: Achieve ISO 27001 compliance for the new platform while implementing Zero Trust security principles<br>
+      - Developer Productivity: Enable self-service provisioning through GitOps workflows, reducing infrastructure dependencies by 70%<br>
     </blockquote>
   </details>
   <details>
