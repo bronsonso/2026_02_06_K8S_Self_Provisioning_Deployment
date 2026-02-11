@@ -81,7 +81,7 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
         Ensure all selected software and hardware components are within supported lifecycles.<br>
         [References](./Repository/Documentations/eosl.md)
 
-   2. Resources estimation
+   2. Resources estimation<br>
       Detailed analysis of current usage and projected requirements to ensure adequate capacity and cost-effective scaling.
       - **Baseline Metrics from Legacy Environment**<br>
         Aggregate RAM, CPU, storage, and network bandwidth usage from existing KVM VMs and OpenVZ containers.
@@ -92,48 +92,55 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
       - **Kubernetes Overhead Calculation**<br>
         Justification for additional resources needed for K8s control plane, worker nodes, and system overhead.
 
-   2. Business (Cost)
+   3. Business (Cost)<br>
       Financial modeling to justify investment and forecast long-term operational impact.
-
-Total Cost of Ownership (TCO)
-
-Setup Costs: Hardware, software licenses, professional services, training.
-
-Running Costs: Power, cooling, maintenance, support subscriptions.
-
-Return on Investment (ROI)
-Quantify savings from infrastructure consolidation, improved efficiency, and reduced operational overhead.
-   3. Security
-      - Compliances 27001, CISA, NIST
-      - Hardening on components
-      - vLAN & Firewall configurations     
-   3. Schedule
-        - Phase 1: Testing - K8S, HCI
-                 - Testing of HCI
-                   - Setup Harvester on 2 hosts
-                 - Test K8S cluster management
-                   - Setup Rancher on Harvester
-                 - Setup RKE2 2 clusters (dev, prod)
-                 - test with 10% systems (one from each type: heavy usage, low usage, one from vm, one from container, one legacy system, one modern system, one web site, one database, one cms)
-        - Phase 2: Fine Tuning - K8S
-        
-        - Phase 2: Production -
-
-        - Phase 3: SASE 
-
-        - Phase 4: Addition Features
-                 - Backstage User GUI
-   4. Operations
-      - agile infrastructure
-      - application developer self provisioning
-      - RBAC
-   5. Management
-      - resoureces projection
-   6. Documentations and Versioning
-      - Implementation procedures
-      - Credentials
-      - File Structure (github, )
-      - Namespace ()
+      - **Total Cost of Ownership (TCO)**<br>
+        - Setup Costs: Hardware, software licenses, professional services, training.
+        - Running Costs: Power, cooling, maintenance, support subscriptions.
+      - **Return on Investment (ROI)**
+        Quantify savings from infrastructure consolidation, improved efficiency, and reduced operational overhead.
+   4. Security & Compliance<br>
+      Ensuring the platform meets organizational and regulatory security standards.
+      - **Compliance Frameworks**
+        Align with ISO 27001, CISA guidelines, and NIST cybersecurity framework.
+      - **Component Hardening**
+        Apply security baselines to Kubernetes nodes, container images, and orchestration tools.
+      - **Network Segmentation & Access Controls**
+        Define vLAN schemas, firewall rules, and zero-trust network policies.
+   5. Schedule & Phasing<br>
+      Time-bound roadmap with clear milestones, deliverables, and risk-mitigation checkpoints.
+      - **Phase 1: Proof of Concept & Testing**<br>
+        - Deploy Harvester HCI on 2 hosts.<br>
+        - Install Rancher for cluster management.<br>
+        - Provision RKE2 clusters (dev, prod).<br>
+        - Migrate 10% of representative workloads (high/low usage, VM/container, legacy/modern, web/database/CMS).<br>
+      - **Phase 2: Fine-Tuning & Validation**<br>
+        - Optimize Kubernetes configurations based on PoC results.
+        - Validate performance, resilience, and operational procedures.
+      - **Phase 3: Production Migration**<br>
+        - Scale platform to full capacity (30+ servers).<br>
+        - Execute phased migration of remaining ~700 systems.<br>
+      - **Phase 4: Advanced Capabilities & SASE Integration**<br>
+        - Implement Secure Access Service Edge (SASE) for secure multi-site connectivity.
+        - Deploy developer portal (Backstage) for self-service provisioning.   
+   6. Operations & Management<br>
+      Processes and tooling to ensure sustainable, agile platform operations.
+      - **Agile Infrastructure Practices**<br>
+        Infrastructure-as-Code (IaC), GitOps workflows, and CI/CD for platform management.
+      - **Self-Service Developer Enablement**<br>
+        Provide RBAC-governed, API-driven provisioning for application teams.
+      - **Resource Projection & Capacity Planning**<br>
+        Ongoing monitoring, forecasting, and scaling of resources based on usage trends.
+   7. Documentation & Governance<br>
+      Structured knowledge management and version control for long-term maintainability.
+      - **Implementation Procedures**<br>
+        Detailed runbooks for deployment, upgrades, and disaster recovery.
+      - **Credentials & Secrets Management**<br>
+        Secure storage and rotation of access keys, certificates, and passwords.
+      - **Repository Structure (GitHub/GitLab)**<br>
+        Organized version control for IaC, manifests, documentation, and policies.
+      - **Namespace Design & Governance**<br>
+        Logical grouping strategy for tenants, applications, and environments within Kubernetes.
 
 <br>
 
