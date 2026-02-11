@@ -21,10 +21,10 @@ Project Owner: Bronson So<br>
 1. Overview
 2. Phases
 ### Appendix
-1. Suggested github directory structure 
-2. K8S Pipeline Decision Matrix
-3. Workflow Overview
-4. Network Diagram
+   1. Suggested github directory structure 
+   2. K8S Pipeline Decision Matrix
+   3. Workflow Overview
+   4. Network Diagram
 
 
 
