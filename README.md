@@ -71,6 +71,9 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
       - **HCI integration Strategy**<br>
         Compare the performance of K8S on HCI and selection of Hyper-Converged Infrastructure platform (e.g., Harvester) for integrated compute, storage, and networking.<br>
         [References](./Repository/Documentations/hci_infrastructure_framework_decision_matrix.md)
+      - **CI/CD Pipeline Architecture**<br>
+        Selection of pipeline tools (Jenkins, GitLab CI, GitHub Actions, Argo CD) and strategy (GitOps vs traditional CI/CD)
+        [References](./Repository/Documentations/k8s_pipeline_decision_matrix.md)
       - **Cluster Topology**<br>
         Single vs. multi-cluster design based on isolation, security, and operational requirements.<br>
         [References](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
@@ -129,6 +132,8 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
         Infrastructure-as-Code (IaC), GitOps workflows, and CI/CD for platform management.
       - **Self-Service Developer Enablement**<br>
         Provide RBAC-governed, API-driven provisioning for application teams.
+      - **Workflow and Processes**<br>
+        Describe workflow and processes
       - **Resource Projection & Capacity Planning**<br>
         Ongoing monitoring, forecasting, and scaling of resources based on usage trends.
    7. Documentation & Governance<br>
@@ -144,33 +149,9 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
 
 <br>
 
-## K8S Pipeline Decision Matrix
-
-| Stage | Name | Purpose | Primary Tools | Input | Output |
-|-------|------|---------|---------------|-------|--------|
-| **1** | **REQUEST** | Resource initiation and validation | GitHub Issues/PRs, Backstage, Jira | Developer needs | Validated request ticket |
-| **2** | **APPROVAL** | Governance and compliance check | GitHub Reviews, OPA, manual approval | Request ticket | Approved/Rejected decision |
-| **3** | **PROVISION** | Infrastructure creation | Terraform, Crossplane, Pulumi | Approved request | Namespace with quotas & policies |
-| **4** | **CONFIG_SYNC** | GitOps configuration deployment | Flux CD, Argo CD | Git repository | Applications deployed |
-| **5** | **CI** | Build and test automation | GitHub Actions, Jenkins, GitLab CI | Source code | Container images |
-| **6** | **CD** | Release and deployment | Flux CD Auto, Argo Rollouts, Spinnaker | New container images | Updated running applications |
-| **7** | **OBSERVE** | Monitoring and observability | Prometheus, Grafana, ELK | Running applications | Metrics, logs, alerts |
-| **8** | **MAINTAIN** | Optimization and cleanup | Custom operators, CronJobs | Time/usage data | Optimized resources |
 
 <br>
 
-## Workflow Overview
-
-| Step | Stage Name | Description | Tools/Systems | Owner |
-|------|------------|-------------|---------------|-------|
-| **1** | **REQUEST_INITIATION** | User submits project request via email | Email, Request Form | User |
-| **2** | **ACCOUNT_PROVISIONING** | Support creates project account and base access | Active Directory, IAM | Support Team |
-| **3** | **RESOURCE_SELECTION** | User selects resources via self-service portal | Backstage Portal | User |
-| **4** | **GIT_PR_CREATION** | Portal generates Pull Request with resource specs | GitHub, Backstage | System |
-| **5** | **APPROVAL_WORKFLOW** | Team/project leader reviews and approves | GitHub Reviews, Slack | Project Lead |
-| **6** | **INFRA_AUTOMATION** | Automated provisioning pipeline executes | GitHub Actions, Terraform, Ansible | CI/CD System |
-| **7** | **RESOURCE_DEPLOYMENT** | GitOps syncs configuration to Kubernetes | FluxCD, Kubernetes | GitOps System |
-| **8** | **NOTIFICATION** | User notified of resource availability | Email, Slack | Notification System |
 
 <br>
 
