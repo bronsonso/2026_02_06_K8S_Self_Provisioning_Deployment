@@ -32,6 +32,12 @@ Project Owner: Bronson So<br>
 ### 1. Overview
 Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
 
+   1. Technology Stack
+      Key architectural and platform decisions that will shape the solution’s design, scalability, and lifecycle management.
+      - Bare metal vs Virtualized Infrastructure
+        Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes.
+        [References](./Repository/Documentations/k8s_bare_metal_vm_decision_matrix.md)
+
 **Goal**: Replace ~700 legacy VM and container workloads with a modern, on-premises Kubernetes platform that enables self-provisioning for development teams while lowering operational costs.
 
 **Approach**:
