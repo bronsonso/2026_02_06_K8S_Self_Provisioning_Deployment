@@ -30,9 +30,9 @@ Project Owner: Bronson So<br>
 
 ## Background and Objectives
 ### 1. Overview
-    Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
+&nbsp;&nbsp;&nbsp;&nbsp;Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
 
-Goal: Replace ~700 legacy VM and container workloads with a modern, on-premises Kubernetes platform that enables self-provisioning for development teams while lowering operational costs.
+&nbsp;&nbsp;&nbsp;&nbsp;Goal: Replace ~700 legacy VM and container workloads with a modern, on-premises Kubernetes platform that enables self-provisioning for development teams while lowering operational costs.
 
 Approach:
 - Build a scalable Kubernetes foundation on cost-efficient Hyper-Converged Infrastructure (HCI).
