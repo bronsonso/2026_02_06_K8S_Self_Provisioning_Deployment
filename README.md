@@ -68,28 +68,28 @@ Modernizing IT Infrastructure with Self-Service Kubernetes & HCI
       - **Bare metal vs Virtualized Infrastructure**<br>
         Evaluate performance, manageability, and isolation trade-offs for hosting Kubernetes nodes.<br>
         [References](./Repository/Documentations/k8s_bare_metal_vm_decision_matrix.md)
-      - HCI integration Strategy<br>
+      - **HCI integration Strategy**<br>
         Compare the performance of K8S on HCI and selection of Hyper-Converged Infrastructure platform (e.g., Harvester) for integrated compute, storage, and networking.<br>
         [References](./Repository/Documentations/hci_infrastructure_framework_decision_matrix.md)
-      - Cluster Topology<br>
+      - **Cluster Topology**<br>
         Single vs. multi-cluster design based on isolation, security, and operational requirements.<br>
         [References](./Repository/Documentations/k8s_single_multi_cluster_decision_matrix.md)
-      - Kubernetes Infrastructure Framework<br>
+      - **Kubernetes Infrastructure Framework**<br>
         Choice of Kubernetes distribution, networking (CNI), storage (CSI), and ingress, etc...<br>
         [References](./Repository/Documentations/k8s_infrastructure_framework_decision_matrix.md)
-      - Component End-of-Life/Support (EOSL)<br>
+      - **Component End-of-Life/Support (EOSL)**<br>
         Ensure all selected software and hardware components are within supported lifecycles.<br>
         [References](./Repository/Documentations/eosl.md)
 
    2. Resources estimation
       Detailed analysis of current usage and projected requirements to ensure adequate capacity and cost-effective scaling.
-      - Baseline Metrics from Legacy Environment<br>
+      - **Baseline Metrics from Legacy Environment**<br>
         Aggregate RAM, CPU, storage, and network bandwidth usage from existing KVM VMs and OpenVZ containers.
-      - Existing Server Utilization for HCI Pilot<br>
+      - **Existing Server Utilization for HCI Pilot**<br>
         Assessment of available capacity on 10 Dell R610/R650 servers for Phase 1 testing.
-      - New Server Procurement Forecast<br>
+      - **New Server Procurement Forecast**<br>
         Projected hardware requirements for scaling to 30+ servers in production.
-      - Kubernetes Overhead Calculation<br>
+      - **Kubernetes Overhead Calculation**<br>
         Justification for additional resources needed for K8s control plane, worker nodes, and system overhead.
 
 
