@@ -57,21 +57,21 @@
 - Implementation of distributed storage using Longhorn
 - Network segmentation and SD-WAN/SASE integration
 
-<summary><strong>🛠️ Platform Services</strong></summary>
+<strong>🛠️ Platform Services</strong>
 
 - Rancher multi-cluster management platform installation
 - RKE2 Kubernetes clusters (development and production environments)
 - CI/CD pipeline implementation with GitOps (Flux/ArgoCD)
 - Centralized monitoring, logging, and alerting stack
 
-<summary><strong>🚚 Application Migration</strong></summary>
+<strong>🚚 Application Migration</strong>
 
 - Assessment and migration of all 700 existing systems
 - Containerization of compatible applications (target: 80% container adoption)
 - Legacy VM migration to Harvester for incompatible systems (target: 20% remaining as VMs)
 - Data migration strategy for persistent storage requirements
 
-<summary><strong>⚙️ Operational Enablement</strong></summary>
+<strong>⚙️ Operational Enablement</strong>
 
 - Infrastructure as Code (Terraform/Ansible) implementation
 - Self-service developer portal and catalog
@@ -171,10 +171,10 @@ Detailed analysis of current usage and projected requirements to ensure adequate
 Aggregate RAM, CPU, storage, and network bandwidth usage from existing KVM VMs and OpenVZ containers.
 
 - **Report generated**: 11 Feb 2026
-- **Utility**: Cacti (data center)
-- **Data capture time range**: 2025-02-12 - 2026-02-11
+- **Utility**: Cacti (Data center)
+- **Data capture time range**: From 2025-02-12 to 2026-02-11
 
-| Category | Server | CPU (avg/max) | RAM (avg/max) | Storage (avg/max) | Traffic Inbound | Traffic Outbound |
+| Category | Server | CPU (avg/max) | RAM (avg/max) | Storage (avg/max) | Traffic Inbound (avg/max) | Traffic Outbound (avg/max) |
 |----------|--------|---------------|---------------|-------------------|-----------------|------------------|
 | KVM (Prod) | Dell42 | 42.59% / 82.1% | 92.19% / 114.5% | 3.38TB / 3.78TB | 2.38M / 225.34M | 2.48M / 209.04M |
 | KVM (Prod) | Dell43 | *Data pending* | *Data pending* | *Data pending* | *Data pending* | *Data pending* |
@@ -354,9 +354,9 @@ We're implementing a production-ready infrastructure platform that leverages Har
 
 | Section | Status | Last Updated | Owner |
 |---------|--------|--------------|-------|
-| Executive Summary | ✅ Complete | 2026-01-21 | Bronson So |
-| Technical Considerations | 🔄 In Progress | 2026-01-21 | Bronson So |
-| Implementation Plan | ✅ Complete | 2026-01-21 | Bronson So |
-| Appendices | 🔄 In Progress | 2026-01-21 | Bronson So |
+| Executive Summary | ✅ Complete | 2026-02-11 | Bronson So |
+| Technical Considerations | 🔄 In Progress | 2026-02-11 | Bronson So |
+| Implementation Plan | ✅ Complete | 2026-02-11 | Bronson So |
+| Appendices | 🔄 In Progress | 2026-02-11 | Bronson So |
 | All Other Sections | ⏳ Pending | - | - |
 
