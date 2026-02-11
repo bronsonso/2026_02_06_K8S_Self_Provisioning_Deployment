@@ -1,3 +1,27 @@
+## File Structure
+Convention: snake_case
+Use for: Files, directories, configuration files, data files, scripts
+
+Examples:
+```
+text
+config/
+├── database_config.yaml
+├── network_settings.conf
+└── backup_schedule.json
+
+scripts/
+├── migrate_legacy_vms.py
+├── validate_cluster_health.sh
+└── generate_reports.sql
+```
+
+Why snake_case :
+- ✅ Clear word separation without ambiguity
+- ✅ Common convention in Python, Ruby, configuration files
+- ✅ Easy to type (underscore vs. hyphen depends on keyboard layout preference)
+
+
 ## Github Structure
 
 ```
