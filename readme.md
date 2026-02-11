@@ -66,12 +66,15 @@ TBC
 9.2 Budget and Cost Analysis
 
 ### Appendices
-  A. Technical Documentation
-    A.1 GitHub Repository Structure
-    A.2 Kubernetes Pipeline Decision Matrix
-A.3 Workflow & Process Diagrams
+<ol type="A">
+  <li>A. Technical Documentation
+    <ol type="A.1">
+      <li>A.1 GitHub Repository Structure
+      <li>A.2 Kubernetes Pipeline Decision Matrix
+    A.3 Workflow & Process Diagrams
 A.4 Network Topology Diagrams
 A.5 Hardware Specifications
+    </ol>
 B. Operational Documentation
 B.1 Deployment Procedures
 B.2 Troubleshooting Guides
@@ -87,7 +90,7 @@ D.1 Resource Utilization Reports
 D.2 Cost-Benefit Analysis
 D.3 Vendor Comparison Matrix
 D.4 Technology Evaluation Criteria
-
+</ol>
 <br><br>
 
 ## Background and Objectives
