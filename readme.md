@@ -23,7 +23,7 @@ Project Owner: Bronson So<br>
   </details>
   <details>
     <Summary><strong>1.3 Key Success Metrics</strong></Summary>
-    
+    <blockquote>
 | Metric | Baseline | Target | Measurement Method |
 |--------|----------|--------|--------------------|
 | Infrastructure Cost/App | $X/month | 30% reduction | Financial analysis |
@@ -32,6 +32,7 @@ Project Owner: Bronson So<br>
 | Platform Availability | 99.5% | 99.9% uptime | SLA monitoring |
 | Migration Completion | N/A | 100% of 700 systems | Migration tracker |
 | Security Compliance | Partial | Full ISO 27001 | Audit reports |
+    </blockquote>
   </details>
 
 ### 2. Project Scope & Objectives
