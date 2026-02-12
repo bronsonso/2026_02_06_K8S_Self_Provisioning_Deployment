@@ -142,7 +142,9 @@
 
 ---
 
-## 4. Technical Considerations
+## 4. Considerations
+
+### Technology Stack
 
 <details>
 <summary><strong>4.1 Technology Stack ✅</strong></summary>
@@ -176,7 +178,7 @@ Aggregate RAM, CPU, storage, and network bandwidth usage from existing KVM VMs a
 
 | Category | Server | CPU (avg/max) | RAM (avg/max) | Storage (avg/max) | Traffic Inbound (avg/max) | Traffic Outbound (avg/max) |
 |----------|--------|---------------|---------------|-------------------|-----------------|------------------|
-| KVM (Prod) | Dell42 | 42.59% / 82.1% | 92.19% / 114.5% | 3.38TB / 3.78TB | 2.38M / 225.34M | 2.48M / 209.04M |
+| KVM (Prod) | Dell42 (R440) | 42.59% / 82.1% | 92.19GB / 114.5GB | 3.38TB / 3.78TB | 2.38M / 225.34M | 2.48M / 209.04M |
 | KVM (Prod) | Dell43 | *Data pending* | *Data pending* | *Data pending* | *Data pending* | *Data pending* |
 | KVM (Prod) | Dell47 | *Data pending* | *Data pending* | *Data pending* | *Data pending* | *Data pending* |
 | KVM (Prod) | Dell50 | *Data pending* | *Data pending* | *Data pending* | *Data pending* | *Data pending* |
@@ -252,6 +254,98 @@ Structured knowledge management and version control for long-term maintainabilit
 | **Namespace Design & Governance** | Logical grouping for tenants, applications, and environments within K8s |
 
 </details>
+
+
+<details>
+<summary><strong>4.6 Miscellaneous</strong></summary>
+
+1. Contextual Integration & Existing Systems
+
+- **Identity Management Integration**
+  - Integration with HKEdCity's existing identity management (AD/LDAP, perhaps HKEdCity SSO for schools)
+  
+- **Compliance Requirements**
+  - Compliance with Hong Kong data residency requirements
+  - Adherence to Education Bureau guidelines
+   
+- **Infrastructure Adaptation**
+  - Adaptation to specific network topology (on-prem, cloud hybrid, or HKEdCity's unique constraints)
+
+## 2. Operational Readiness, Not Just Functionality
+
+- **High Availability**
+  - High availability design for education services that can't afford downtime during exam periods
+  
+- **Disaster Recovery**
+  - Disaster recovery that actually works when needed (not just documented)
+  
+- **Data Protection**
+  - Backup strategies for etcd and persistent volumes that meet retention policies
+  
+- **Observability**
+  - Monitoring integration with existing Nagios/Prometheus/Datadog stack
+  - Log aggregation that security/compliance can audit
+
+## 3. Governance & Guardrails
+
+- **Resource Management**
+  - Resource quotas that prevent one team from starving others
+  
+- **Security Controls**
+  - Network policies that isolate sensitive education data
+  - Pod security standards that meet HKEdCity's security posture
+  
+- **Cost Governance**
+  - Cost visibility so self-service doesn't mean surprise bills
+  
+- **Access Control**
+  - RBAC that mirrors your actual organizational structure (not generic roles)
+
+## 4. The "Last Mile" Work
+
+- **Storage Configuration**
+  - StorageClass configuration that actually performs for education workloads
+  
+- **Networking**
+  - Ingress controller setup with proper SSL termination
+  - Custom domain support for schools
+  
+- **Service Mesh**
+  - Service mesh decisions (do you need Istio? Is it overkill?)
+  
+- **CI/CD Integration**
+  - Integration with existing HKEdCity tooling (Jenkins? GitLab? Azure DevOps?)
+  
+- **Developer Experience**
+  - Developer experience refinement - making it actually easy, not just possible
+
+## 5. Risk Management
+
+- **Failure Analysis**
+  - Failure mode analysis - what breaks, how do we detect it, how do we recover?
+  
+- **Platform Stability**
+  - Upgrade strategies - Kubernetes moves fast, you keep it stable
+  
+- **Technical Debt**
+  - Technical debt prevention - stopping developers from creating unmaintainable patterns
+  
+- **Security Response**
+  - Security vulnerability response - when a CVE hits, you have a plan
+
+## 6. Organizational Translation
+
+Bridging between different parties:
+
+- **Developers** (want freedom, latest features)
+- **Security** (want controls, compliance)
+- **Finance** (want predictability, cost efficiency)
+- **Management** (want reliability, SLAs)
+
+
+
+</details>
+
 
 ---
 
