@@ -255,95 +255,101 @@ Structured knowledge management and version control for long-term maintainabilit
 
 </details>
 
-
 <details>
 <summary><strong>4.6 Miscellaneous</strong></summary>
 
-1. Contextual Integration & Existing Systems
+### 1. Contextual Integration & Existing Systems
 
 - **Identity Management Integration**
-  - Integration with HKEdCity's existing identity management (AD/LDAP, perhaps HKEdCity SSO for schools)
+  - Integration with HKEdCity's existing identity management (AD/LDAP, potentially HKEdCity SSO for schools)
   
 - **Compliance Requirements**
-  - Compliance with Hong Kong data residency requirements
-  - Adherence to Education Bureau guidelines
+  - Alignment with Hong Kong data residency requirements
+  - Compliance with Education Bureau guidelines
    
 - **Infrastructure Adaptation**
-  - Adaptation to specific network topology (on-prem, cloud hybrid, or HKEdCity's unique constraints)
+  - Customisation to fit network topology (on-premises, cloud hybrid, or HKEdCity-specific constraints)
 
-## 2. Operational Readiness, Not Just Functionality
+---
+
+### 2. Operational Readiness, Not Just Functionality
 
 - **High Availability**
-  - High availability design for education services that can't afford downtime during exam periods
+  - Design for education services that cannot tolerate downtime during examination periods
   
 - **Disaster Recovery**
-  - Disaster recovery that actually works when needed (not just documented)
+  - Fully validated recovery procedures, not merely documented plans
   
 - **Data Protection**
-  - Backup strategies for etcd and persistent volumes that meet retention policies
+  - Backup strategies for etcd and persistent volumes in line with retention policies
   
 - **Observability**
-  - Monitoring integration with existing Nagios/Prometheus/Datadog stack
-  - Log aggregation that security/compliance can audit
+  - Integration with existing monitoring stack (Nagios / Prometheus / Datadog)
+  - Audit-ready log aggregation for security and compliance teams
 
-## 3. Governance & Guardrails
+---
+
+### 3. Governance & Guardrails
 
 - **Resource Management**
-  - Resource quotas that prevent one team from starving others
+  - Quotas to prevent resource starvation across teams
   
 - **Security Controls**
-  - Network policies that isolate sensitive education data
-  - Pod security standards that meet HKEdCity's security posture
+  - Network policies isolating sensitive education data
+  - Pod security standards aligned with HKEdCity's security posture
   
 - **Cost Governance**
-  - Cost visibility so self-service doesn't mean surprise bills
+  - Transparent cost visibility to avoid billing surprises in self-service models
   
 - **Access Control**
-  - RBAC that mirrors your actual organizational structure (not generic roles)
+  - RBAC modelled on actual organisational structure, not generic placeholders
 
-## 4. The "Last Mile" Work
+---
+
+### 4. The "Last Mile" Work
 
 - **Storage Configuration**
-  - StorageClass configuration that actually performs for education workloads
+  - StorageClass tuning for education workload performance characteristics
   
 - **Networking**
-  - Ingress controller setup with proper SSL termination
-  - Custom domain support for schools
+  - Ingress controller configuration with proper SSL termination
+  - Support for custom school domains
   
 - **Service Mesh**
-  - Service mesh decisions (do you need Istio? Is it overkill?)
+  - Deliberate service mesh decisions (Istio required, or overkill?)
   
 - **CI/CD Integration**
-  - Integration with existing HKEdCity tooling (Jenkins? GitLab? Azure DevOps?)
+  - Plug into existing HKEdCity pipelines (Jenkins / GitLab / Azure DevOps)
   
 - **Developer Experience**
-  - Developer experience refinement - making it actually easy, not just possible
+  - Polish the inner loop—making adoption genuinely easy, not just theoretically possible
 
-## 5. Risk Management
+---
+
+### 5. Risk Management
 
 - **Failure Analysis**
-  - Failure mode analysis - what breaks, how do we detect it, how do we recover?
+  - Systematic failure mode identification, detection, and recovery protocols
   
 - **Platform Stability**
-  - Upgrade strategies - Kubernetes moves fast, you keep it stable
+  - Upgrade strategies that prioritise stability in a fast-moving ecosystem
   
 - **Technical Debt**
-  - Technical debt prevention - stopping developers from creating unmaintainable patterns
+  - Proactive prevention of unmaintainable patterns introduced by development teams
   
 - **Security Response**
-  - Security vulnerability response - when a CVE hits, you have a plan
+  - Predefined response plan for CVEs and emerging vulnerabilities
 
-## 6. Organizational Translation
+---
 
-Bridging between different parties
+### 6. Organisational Translation
 
+Bridging perspectives across stakeholders:
 
-- **Developers** (want freedom, latest features)
-- **Security** (want controls, compliance)
-- **Finance** (want predictability, cost efficiency)
-- **Management** (want reliability, SLAs)
-
-
+- **Developers** – desire for autonomy and access to latest capabilities  
+- **Security** – requirement for controls and compliance adherence  
+- **Finance** – need for predictability and cost efficiency  
+- **Management** – expectation of reliability and service level commitments
 
 </details>
 
