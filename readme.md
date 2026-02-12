@@ -335,7 +335,8 @@ Structured knowledge management and version control for long-term maintainabilit
 
 ## 6. Organizational Translation
 
-Bridging between different parties:
+Bridging between different parties
+
 
 - **Developers** (want freedom, latest features)
 - **Security** (want controls, compliance)
