@@ -153,8 +153,8 @@ Key architectural and platform decisions that will shape the solution's design, 
 
 | Consideration | Description | Reference |
 |---------------|-------------|-----------|
-| **VM K8S Migration Solution Analysis** | Modernization approach to transition legacy VMs and containers into HCI, traditional VM environments, and Kubernetes, with self-service provisioning for developers | [Doc](./repository/documentations/project_plan/technical_consideration/vm_k8s_migration_solution_analysis.md) |
-| **K8S Solution Analysis** | Modernization approach to transition legacy VMs and containers into HCI, traditional VM environments, and Kubernetes, with self-service provisioning for developers | [Doc](./repository/documentations/project_plan/technical_consideration/k8s_solution_analysis.md) |
+| **VM K8S Migration Stack Analysis** | Modernization approach to transition legacy VMs and containers into HCI, traditional VM environments, and Kubernetes, with self-service provisioning for developers | [Doc](./repository/documentations/project_plan/technical_consideration/vm_k8s_stack_analysis.md) |
+| **K8S Stack Analysis** | Modernization approach to transition legacy VMs and containers into HCI, traditional VM environments, and Kubernetes, with self-service provisioning for developers | [Doc](./repository/documentations/project_plan/technical_consideration/k8s_stack_analysis.md) |
 | **K8S Distributions** | Choice of K8s distributions: k3s, kubeadm, rke2, kind, etc... | [Doc](./repository/documentations/project_plan/technical_consideration/k8s_distribution_analysis.md) |
 | **K8S Infrastructure Components** | Choice of K8s components: control plane, networking (CNI), storage (CSI), and ingress | [Doc](./repository/documentations/project_plan/technical_consideration/k8s_infrastructure_component_analysis.md) |
 | **Rancher & RKE2 Components Coverage** | Rancher and RKE2 components coverage in k8s framework | [Doc](./repository/documentations/project_plan/technical_consideration/rancher_rke2_stack_coverage_matrix.md) |
